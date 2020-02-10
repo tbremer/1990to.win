@@ -1,5 +1,9 @@
 const { createServer, STATUS_CODES } = require('http');
 const express = require('express');
+
+const render = require('./renderer');
+const home = require('./pages/home');
+
 const app = express();
 
 createServer(app).listen(process.env.PORT || 8888, () =>
@@ -17,10 +21,10 @@ app.get('/', (req, res) => {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>1,990 to win</title>
 </head>
 <body>
-    <pre>${JSON.stringify(req.context, null, 2)}</pre>
+    ${render(home())}
 </body>
 </html>`;
 
@@ -34,11 +38,25 @@ app.get('/', (req, res) => {
 });
 
 app.use((_, res) => {
+  const body = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1,990 to win</title>
+</head>
+<body>
+    Yikes! That's not happening…
+    <br />
+    <a href="/">Go home! 🏚</a>
+</body>
+</html>`;
   res.writeHead(404, STATUS_CODES[404], {
     'Content-Type': 'text/html',
-    'Content-Length': 7,
+    'Content-Length': body.length,
   });
-  res.write('oh noz!');
+  res.write(body);
+  res.end();
 });
 
 app.use((err, _req, res) => {
