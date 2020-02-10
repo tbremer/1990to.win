@@ -1,0 +1,110 @@
+{
+  "amy-klobuchar": {
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Amy_Klobuchar%2C_official_portrait%2C_113th_Congress.jpg/256px-Amy_Klobuchar%2C_official_portrait%2C_113th_Congress.jpg",
+    "delegates": [
+      {
+        "count": 1,
+        "state": "iowa"
+      }
+    ]
+  },
+  "andrew-yang": {
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Andrew_Yang_%2848540376841%29.jpg/256px-Andrew_Yang_%2848540376841%29.jpg",
+    "delegates": [
+      {
+        "count": 0,
+        "state": "iowa"
+      }
+    ]
+  },
+  "bernie-sanders": {
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Bernie_Sanders_July_2019_retouched.jpg/256px-Bernie_Sanders_July_2019_retouched.jpg",
+    "delegates": [
+      {
+        "count": 12,
+        "state": "iowa"
+      }
+    ]
+  },
+  "deval-patrick": {
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Deval_Patrick_official_photo_%28cropped%29.jpg/256px-Deval_Patrick_official_photo_%28cropped%29.jpg",
+    "delegates": [
+      {
+        "count": 0,
+        "state": "iowa"
+      }
+    ]
+  },
+  "elizabeth-warren": {
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Elizabeth_Warren%2C_official_portrait%2C_114th_Congress.jpg/256px-Elizabeth_Warren%2C_official_portrait%2C_114th_Congress.jpg",
+    "delegates": [
+      {
+        "count": 8,
+        "state": "iowa"
+      }
+    ]
+  },
+  "joe-biden": {
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Joe_Biden_official_portrait_crop3.jpg/256px-Joe_Biden_official_portrait_crop3.jpg",
+    "delegates": [
+      {
+        "count": 6,
+        "state": "iowa"
+      }
+    ]
+  },
+  "john-delaney": {
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/John_Delaney_113th_Congress_official_photo.jpg/256px-John_Delaney_113th_Congress_official_photo.jpg",
+    "delegates": [
+      {
+        "count": 0,
+        "state": "iowa"
+      }
+    ]
+  },
+  "michael-bennet": {
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Michael_Bennet_Official_Photo_%28cropped%29.jpg/256px-Michael_Bennet_Official_Photo_%28cropped%29.jpg",
+    "delegates": [
+      {
+        "count": 0,
+        "state": "iowa"
+      }
+    ]
+  },
+  "michael-bloomberg": {
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Mike_Bloomberg_Headshot.jpg/256px-Mike_Bloomberg_Headshot.jpg",
+    "delegates": [
+      {
+        "count": 0,
+        "state": "iowa"
+      }
+    ]
+  },
+  "pete-buttigieg": {
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Pete_Buttigieg_by_Gage_Skidmore.jpg/256px-Pete_Buttigieg_by_Gage_Skidmore.jpg",
+    "delegates": [
+      {
+        "count": 14,
+        "state": "iowa"
+      }
+    ]
+  },
+  "tom-steyer": {
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Tom_Steyer_by_Gage_Skidmore.jpg/256px-Tom_Steyer_by_Gage_Skidmore.jpg",
+    "delegates": [
+      {
+        "count": 0,
+        "state": "iowa"
+      }
+    ]
+  },
+  "tulsi-gabbard": {
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Tulsi_Gabbard%2C_official_portrait%2C_113th_Congress.jpg/256px-Tulsi_Gabbard%2C_official_portrait%2C_113th_Congress.jpg",
+    "delegates": [
+      {
+        "count": 0,
+        "state": "iowa"
+      }
+    ]
+  }
+}

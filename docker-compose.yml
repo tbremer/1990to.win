@@ -1,0 +1,13 @@
+---
+version: '3'
+
+services:
+  server:
+    image: 'docker.pkg.github.com/tbremer/1990to.win/server:latest'
+    expose:
+      - 9000
+    environment:
+      - PORT=9000
+    build:
+      context: './'
+      dockerfile: './Dockerfile'
