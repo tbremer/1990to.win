@@ -14,16 +14,6 @@ function candidate([name, data], idx) {
     'div',
     {
       class: 'candidate',
-      style: `display:flex;
-      align-items: center;
-      box-sizing: border-box;
-      width: calc(33% - 1rem);
-      padding: 1rem;
-      border-radius: .5rem;
-      background-color: #f7fafc;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);`,
     },
     h('img', {
       width: '75px',
@@ -33,7 +23,7 @@ function candidate([name, data], idx) {
     }),
     h(
       'div',
-      null,
+      { class: 'candidate-meta' },
       h('h2', { style: 'margin: 0' }, nameToHuman(name)),
       h(
         'p',
@@ -60,15 +50,9 @@ function home(context) {
   });
 
   return h(
-    'div',
+    'main',
     {
-      style: `
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      width: 70%;
-      margin: 0 auto;
-      `,
+      class: 'candidate-list',
     },
     ...data.map(candidate)
   );
