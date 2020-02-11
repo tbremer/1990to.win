@@ -6,6 +6,7 @@ COPY package.json ./
 COPY package-lock.json ./
 COPY data.json ./
 COPY server/ server/
+COPY assets/ assets/
 
 RUN npm install --only=prod
 

@@ -9,16 +9,14 @@ function nameToHuman(name) {
     );
 }
 
-function candidate([name, data], idx) {
+function candidate([name, data]) {
   return h(
     'div',
     {
-      class: 'candidate',
+      class: `candidate ${data.suspended ? 'suspended' : ''}`,
     },
     h('img', {
-      width: '75px',
-      height: '75px',
-      style: 'object-fit: cover;border-radius: 75px;margin-right: 1rem;',
+      class: 'candidate-image',
       src: data.photo,
     }),
     h(

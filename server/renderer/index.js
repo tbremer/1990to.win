@@ -18,7 +18,6 @@ function doctype(tree) {
 }
 
 function render(tree) {
-  console.log('tree:', tree);
   if (typeof tree === 'string' || typeof tree === 'number')
     return tree.toString();
 
