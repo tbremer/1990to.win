@@ -38,7 +38,10 @@ function addDelegates(total, { count }) {
 }
 
 function home(context) {
-  const data = Object.entries(context);
+  const entries = Object.entries(context);
+  const active = entries.filter(([, { suspended }]) => !suspended);
+  const suspended = entries.filter(([, { suspended }]) => suspended);
+  const data = active.concat(suspended);
 
   data.sort(([, { delegates: a }], [, { delegates: b }]) => {
     const aCount = a.reduce(addDelegates, 0);
