@@ -222,6 +222,7 @@ app.get('/', (req, res, next) => {
   next();
 });
 
+/* cURL */
 app.get('/', (req, res, next) => {
   if (!/curl\//.test(req.headers['user-agent'])) return next();
   if (req.url !== '/') return next();
@@ -250,6 +251,13 @@ app.get('/', (req, res, next) => {
           list[
             name
           ] = `suspended on ${candidateData.suspended} with ${list[name]} delegates`;
+        }
+
+        if (candidateData.projection) {
+          list[name] = {
+            delegates: list[name],
+            projection: candidateData.projection,
+          };
         }
 
         return list;

@@ -1,6 +1,7 @@
 {
   "amy-klobuchar": {
     "photo": "/assets/images/amy-klobuchar.jpg",
+    "projection": { "state": "new hampshire", "count": 5 },
     "delegates": [
       {
         "count": 1,
@@ -15,10 +16,12 @@
         "count": 0,
         "state": "iowa"
       }
-    ]
+    ],
+    "suspended": "02/11/2020"
   },
   "bernie-sanders": {
     "photo": "/assets/images/bernie-sanders.jpg",
+    "projection": { "state": "new hampshire", "count": 6 },
     "delegates": [
       {
         "count": 12,
@@ -70,7 +73,8 @@
         "count": 0,
         "state": "iowa"
       }
-    ]
+    ],
+    "suspended": "02/11/2020"
   },
   "michael-bloomberg": {
     "photo": "/assets/images/michael-bloomberg.jpg",
@@ -83,6 +87,7 @@
   },
   "pete-buttigieg": {
     "photo": "/assets/images/pete-buttigieg.jpg",
+    "projection": { "state": "new hampshire", "count": 5 },
     "delegates": [
       {
         "count": 14,

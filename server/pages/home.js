@@ -23,6 +23,16 @@ function candidate([name, data]) {
       'div',
       { class: 'candidate-meta' },
       h('h2', { style: 'margin: 0; padding: 0;' }, nameToHuman(name)),
+      data.projection &&
+        h(
+          'p',
+          {
+            style:
+              'margin: .25rem 0; font-size: .95rem; color:#28A0CB; font-style:italic;',
+          },
+          'New Hampshire Projection:',
+          data.projection.count
+        ),
       h(
         'p',
         {
@@ -45,6 +55,16 @@ function home(context) {
   const entries = Object.entries(context);
   const active = entries.filter(([, { suspended }]) => !suspended);
   const suspended = entries.filter(([, { suspended }]) => suspended);
+
+  suspended.sort(([aName, a], [bName, b]) => {
+    const aTime = new Date(a.suspended).getTime();
+    const bTime = new Date(b.suspended).getTime();
+
+    if (aTime === bTime) return aName < bName ? -1 : aName > bName ? 1 : 0;
+
+    return aTime < bTime ? 1 : aTime > bTime ? -1 : 0;
+  });
+
   const data = active.concat(suspended);
 
   data.sort(([, { delegates: a }], [, { delegates: b }]) => {
