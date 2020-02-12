@@ -5,6 +5,8 @@ on:
     # Publish `master` as Docker `latest` image.
     branches:
       - master
+    paths-ignore:
+      - 'design/**'
 
 jobs:
   # Push image to GitHub Package Registry.
