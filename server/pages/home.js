@@ -18,6 +18,7 @@ function candidate([name, data]) {
     h('img', {
       class: 'candidate-image',
       src: data.photo,
+      alt: `Portrant of ${nameToHuman(name)}.`,
     }),
     h(
       'div',

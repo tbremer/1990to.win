@@ -10,6 +10,8 @@ const logo = require('./pages/logo');
 
 const app = express();
 
+if (process.env.NODE_ENV === 'dev') require('dotenv').config();
+
 const fileCache = new Map();
 const MIME_TYPES = {
   '.css': 'text/css',
@@ -34,8 +36,8 @@ function sendResponse(stream, head, body) {
   stream.end();
 }
 
-createServer(app).listen(process.env.PORT || 8888, () =>
-  console.log(`http://localhost:${process.env.PORT || 8888}`)
+createServer(app).listen(process.env.PORT, () =>
+  console.log(`http://localhost:${process.env.PORT}`)
 );
 
 app.use(
@@ -60,6 +62,15 @@ app.use(
               h('meta', {
                 name: 'viewport',
                 content: 'width=device-width, initial-scale=1.0',
+              }),
+              h('meta', {
+                name: 'description',
+                content:
+                  'It takes 1,990 delegates to win the nomination for President in the DNC. These are the current counts for all participating candidates.',
+              }),
+              h('meta', {
+                name: 'test',
+                content: 'This is a test',
               }),
               /* facebook meta */
               h('meta', {
@@ -113,11 +124,6 @@ app.use(
               }),
 
               h('title', null, '1,990 to win'),
-              h('link', {
-                href:
-                  'https://fonts.googleapis.com/css?family=Barlow:400,500,800&display=swap',
-                rel: 'stylesheet',
-              }),
               h('link', { href: '/assets/style.css', rel: 'stylesheet' }),
               h('link', { href: '/assets/images/favicon.png', rel: 'icon' })
             ),
@@ -160,7 +166,8 @@ app.get('/assets/*', (req, res, next) => {
         {
           'Content-Type': mime,
           'Content-Length': contents.byteLength,
-          ...(imageRegex.test(mime) && !logoRegex.test(mime)
+          ...((imageRegex.test(mime) && !logoRegex.test(mime)) ||
+          /woff2/.test(mime)
             ? { 'Cache-Control': 'max-age=604800' }
             : {}),
         },
@@ -171,10 +178,7 @@ app.get('/assets/*', (req, res, next) => {
   }
 
   readFile(`./assets/${fileName}`, (err, contents) => {
-    if (err) {
-      console.log('next error');
-      return next(err);
-    }
+    if (err) return next(err);
 
     const mime = MIME_TYPES[extname(fileName)] || 'text/plain';
 
@@ -191,7 +195,8 @@ app.get('/assets/*', (req, res, next) => {
         {
           'Content-Type': mime,
           'Content-Length': contents.byteLength,
-          ...(imageRegex.test(mime) && !logoRegex.test(mime)
+          ...((imageRegex.test(mime) && !logoRegex.test(mime)) ||
+          /woff2/.test(mime)
             ? { 'Cache-Control': 'max-age=604800' }
             : {}),
         },
@@ -281,7 +286,7 @@ app.get('/', (req, res, next) => {
   );
 });
 
-app.use((req, res) => {
+app.use((_req, res) => {
   if (res.finished) return;
 
   const body = Buffer.from(
@@ -312,7 +317,6 @@ app.use((req, res) => {
 });
 
 app.use((err, _req, res, _next) => {
-  console.log('caught an error', err);
   const is404 = err.code === 'ENOENT';
   const status = is404 ? [404, STATUS_CODES[404]] : [500, STATUS_CODES[500]];
 
@@ -342,12 +346,3 @@ app.use((err, _req, res, _next) => {
   );
   return;
 });
-
-function nameToHuman(name) {
-  return name
-    .split(/-/g)
-    .reduce(
-      (str, part) => `${str}${part.slice(0, 1).toUpperCase()}${part.slice(1)} `,
-      ''
-    );
-}
