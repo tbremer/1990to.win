@@ -1,6 +1,32 @@
+@font-face {
+    font-family: 'Barlow';
+    src: url('/assets/fonts/Barlow-ExtraBold.woff2') format('woff2'); /* Modern Browsers */
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Barlow';
+    src: url('/assets/fonts/Barlow-Medium.woff2') format('woff2'); /* Modern Browsers */
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Barlow';
+    src: url('/assets/fonts/Barlow-Regular.woff2') format('woff2'); /* Modern Browsers */
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BarlowCondensed';
+    src: url('/assets/fonts/BarlowCondensed-SemiBold.woff2') format('woff2'); /* Modern Browsers */
+    font-weight: 500;
+    font-style: normal;
+}
+
 :root {
     font-size: 100%;
     font-family: Barlow, sans-serif;
+    font-weight: 400;
     color: #16161d;
 }
 
@@ -16,8 +42,22 @@ body {
 }
 
 body {
-    background-color: #cbd5e0;
+    background-color: #edeff0;
     padding: 1rem;
+}
+
+.page-title {
+    font-family: BarlowCondensed;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 5rem;
+}
+
+.candidate-list {
+    background-color: #f7fafc;
+    border-radius: 0.5rem;
+    padding: 0 1rem;
 }
 
 .candidate {
@@ -25,10 +65,11 @@ body {
     align-items: center;
     margin-bottom: 1rem;
     padding: 1rem;
-    border-radius: 0.5rem;
-    background-color: #f7fafc;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border-bottom: 1px solid #dcdee0;
+}
+
+.candidate:last-child {
+    border-color: transparent;
 }
 
 .candidate-image {
@@ -44,17 +85,31 @@ body {
 }
 
 .suspended {
-    opacity: 0.5;
+    opacity: 0.65;
+    color: #8d9297;
+}
+
+.suspended img {
+    filter: grayscale(1);
 }
 
 @media screen and (min-width: 700px) {
     .candidate-list {
+        background-color: transparent;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        padding: 0;
     }
     .candidate {
+        border-radius: 0.5rem;
         width: calc(50% - 4rem);
+        /* box-shadow: 0 4px 6px -1px #8d9297, 0 2px 4px -1px rgba(0, 0, 0, 0.06); */
+        background-color: #f7fafc;
+        border-color: transparent;
+    }
+    .suspended {
+        box-shadow: none !important;
     }
 }
 @media (min-width: 1000px) {

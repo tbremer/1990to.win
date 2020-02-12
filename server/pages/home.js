@@ -22,13 +22,17 @@ function candidate([name, data]) {
     h(
       'div',
       { class: 'candidate-meta' },
-      h('h2', { style: 'margin: 0' }, nameToHuman(name)),
+      h('h2', { style: 'margin: 0; padding: 0;' }, nameToHuman(name)),
       h(
         'p',
-        { style: 'margin: 0; font-size: 1.25rem; font-weight: 500;' },
-        'total delegates:',
+        {
+          style: 'margin: .25rem 0; font-size: 1.25rem; font-weight: 500;',
+        },
+        'Delegate count:',
         data.delegates.reduce(addDelegates, 0)
-      )
+      ),
+      data.suspended &&
+        h('p', { style: 'margin: 0;' }, 'Suspended on:', data.suspended)
     )
   );
 }

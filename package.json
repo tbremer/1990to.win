@@ -1,7 +1,7 @@
 {
   "name": "1990towin",
   "scripts": {
-    "start": "nodemon -w ./ ./server/index.js"
+    "start": "nodemon -w ./ -e css,js,json,html ./server/index.js"
   },
   "devDependencies": {
     "@types/express": "^4.17.2",

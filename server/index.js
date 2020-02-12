@@ -6,6 +6,7 @@ const { extname } = require('path');
 const render = require('./renderer');
 const h = require('./renderer/h');
 const home = require('./pages/home');
+const logo = require('./pages/logo');
 
 const app = express();
 
@@ -19,6 +20,12 @@ const MIME_TYPES = {
 
   '.jpg': 'image/jpeg',
   jpg: 'image/jpeg',
+
+  '.woff2': 'font/woff2',
+  woff2: 'font/woff2',
+
+  '.svg': 'image/svg+xml',
+  svg: 'image/svg+xml',
 };
 
 function sendResponse(stream, head, body) {
@@ -73,10 +80,15 @@ app.use(
                 content:
                   'It takes 1,990 delegates to win the nomination for President in the DNC. These are the current counts for all participating candidates.',
               }),
+              h('meta', {
+                property: 'og:image',
+                content: `https://1990to.win/assets/images/logo.png`,
+              }),
+
               /* twitter meta */
               h('meta', {
                 name: 'twitter:card',
-                content: 'summary',
+                content: 'summary_large_image',
               }),
               h('meta', {
                 name: 'twitter:domain',
@@ -91,21 +103,34 @@ app.use(
                 value:
                   'It takes 1,990 delegates to win the nomination for President in the DNC. These are the current counts for all participating candidates.',
               }),
+              h('meta', {
+                property: 'twitter:creator:id',
+                value: '_tbremer',
+              }),
+              h('meta', {
+                property: 'twitter:image',
+                value: `https://1990to.win/assets/images/logo.png`,
+              }),
+
               h('title', null, '1,990 to win'),
               h('link', {
                 href:
                   'https://fonts.googleapis.com/css?family=Barlow:400,500,800&display=swap',
                 rel: 'stylesheet',
               }),
-              h('link', { href: '/assets/style.css', rel: 'stylesheet' })
+              h('link', { href: '/assets/style.css', rel: 'stylesheet' }),
+              h('link', { href: '/assets/images/favicon.png', rel: 'icon' })
             ),
             h(
               'body',
               null,
               h(
-                'h1',
-                { style: 'margin: 0; margin-bottom: 2rem; text-align:center' },
-                '1,990 to win'
+                'div',
+                {
+                  style:
+                    'width: 100%; max-width: 468px; margin: 1rem auto 2rem; text-align: center;',
+                },
+                logo()
               ),
               typeof component === 'function'
                 ? component(req.context)
@@ -122,6 +147,7 @@ app.use(
 app.get('/assets/*', (req, res, next) => {
   const { 0: fileName } = req.params;
   const imageRegex = /image\//;
+  const logoRegex = /images\/logo/;
 
   if (fileCache.has(fileName)) {
     const { mime, contents } = fileCache.get(fileName);
@@ -134,7 +160,7 @@ app.get('/assets/*', (req, res, next) => {
         {
           'Content-Type': mime,
           'Content-Length': contents.byteLength,
-          ...(imageRegex.test(mime)
+          ...(imageRegex.test(mime) && !logoRegex.test(mime)
             ? { 'Cache-Control': 'max-age=604800' }
             : {}),
         },
@@ -165,7 +191,7 @@ app.get('/assets/*', (req, res, next) => {
         {
           'Content-Type': mime,
           'Content-Length': contents.byteLength,
-          ...(imageRegex.test(mime)
+          ...(imageRegex.test(mime) && !logoRegex.test(mime)
             ? { 'Cache-Control': 'max-age=604800' }
             : {}),
         },
@@ -177,6 +203,7 @@ app.get('/assets/*', (req, res, next) => {
 });
 
 app.get('/', (req, res, next) => {
+  if (/curl\//.test(req.headers['user-agent'])) return next();
   if (req.url !== '/') return next();
   const body = Buffer.from(res.render(home), 'utf-8');
 
@@ -193,6 +220,57 @@ app.get('/', (req, res, next) => {
     body
   );
   next();
+});
+
+app.get('/', (req, res, next) => {
+  if (!/curl\//.test(req.headers['user-agent'])) return next();
+  if (req.url !== '/') return next();
+
+  const entries = Object.entries(req.context); //.entr
+  const active = entries.filter(([, { suspended }]) => !suspended);
+  const suspended = entries.filter(([, { suspended }]) => suspended);
+  const data = active.concat(suspended);
+
+  data.sort(([, { delegates: a }], [, { delegates: b }]) => {
+    const aCount = a.reduce((total, item) => (total += item.count), 0);
+    const bCount = b.reduce((total, item) => (total += item.count), 0);
+
+    return aCount < bCount ? 1 : aCount > bCount ? -1 : 0;
+  });
+
+  const jsonBuffer = Buffer.from(
+    JSON.stringify(
+      data.reduce((list, [name, candidateData]) => {
+        list[name] = candidateData.delegates.reduce(
+          (total, item) => (total += item.count),
+          0
+        );
+
+        if (candidateData.suspended) {
+          list[
+            name
+          ] = `suspended on ${candidateData.suspended} with ${list[name]} delegates`;
+        }
+
+        return list;
+      }, {}),
+      null,
+      2
+    )
+  );
+
+  sendResponse(
+    res,
+    [
+      200,
+      STATUS_CODES[200],
+      {
+        'Content-Type': 'application/json',
+        'Content-Length': jsonBuffer.byteLength,
+      },
+    ],
+    jsonBuffer
+  );
 });
 
 app.use((req, res) => {
@@ -256,3 +334,12 @@ app.use((err, _req, res, _next) => {
   );
   return;
 });
+
+function nameToHuman(name) {
+  return name
+    .split(/-/g)
+    .reduce(
+      (str, part) => `${str}${part.slice(0, 1).toUpperCase()}${part.slice(1)} `,
+      ''
+    );
+}
