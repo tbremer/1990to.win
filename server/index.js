@@ -70,7 +70,7 @@ app.use(
               }),
               h('meta', {
                 name: 'test',
-                content: 'This is a test',
+                content: 'second test',
               }),
               /* facebook meta */
               h('meta', {
