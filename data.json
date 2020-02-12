@@ -1,11 +1,14 @@
 {
   "amy-klobuchar": {
     "photo": "/assets/images/amy-klobuchar.jpg",
-    "projection": { "state": "new hampshire", "count": 5 },
     "delegates": [
       {
         "count": 1,
         "state": "iowa"
+      },
+      {
+        "count": 9,
+        "state": "new hampshire"
       }
     ]
   },
@@ -21,11 +24,14 @@
   },
   "bernie-sanders": {
     "photo": "/assets/images/bernie-sanders.jpg",
-    "projection": { "state": "new hampshire", "count": 6 },
     "delegates": [
       {
         "count": 12,
         "state": "iowa"
+      },
+      {
+        "count": 9,
+        "state": "new hampshire"
       }
     ]
   },
@@ -87,11 +93,14 @@
   },
   "pete-buttigieg": {
     "photo": "/assets/images/pete-buttigieg.jpg",
-    "projection": { "state": "new hampshire", "count": 5 },
     "delegates": [
       {
         "count": 14,
         "state": "iowa"
+      },
+      {
+        "count": 9,
+        "state": "new hampshire"
       }
     ]
   },
