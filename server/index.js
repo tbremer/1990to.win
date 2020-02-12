@@ -68,10 +68,7 @@ app.use(
                 content:
                   'It takes 1,990 delegates to win the nomination for President in the DNC. These are the current counts for all participating candidates.',
               }),
-              h('meta', {
-                name: 'test',
-                content: 'second test',
-              }),
+
               /* facebook meta */
               h('meta', {
                 property: 'og:type',
