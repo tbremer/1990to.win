@@ -3,6 +3,7 @@ const express = require('express');
 const { readFile } = require('fs');
 const { extname } = require('path');
 
+const shutdown = require('./shtudown');
 const render = require('./renderer');
 const h = require('./renderer/h');
 const home = require('./pages/home');
@@ -36,8 +37,10 @@ function sendResponse(stream, head, body) {
   stream.end();
 }
 
-createServer(app).listen(process.env.PORT, () =>
-  console.log(`http://localhost:${process.env.PORT}`)
+shutdown(
+  createServer(app).listen(process.env.PORT, () =>
+    console.log(`http://localhost:${process.env.PORT}`)
+  )
 );
 
 app.use(
