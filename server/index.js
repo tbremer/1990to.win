@@ -137,7 +137,12 @@ app.use(
               ),
               typeof component === 'function'
                 ? component(req.context)
-                : component
+                : component,
+              h(
+                'script',
+                { type: 'text/javascript' },
+                `__DATA__ = ${JSON.stringify(req.context)};`
+              )
             )
           )
         )
