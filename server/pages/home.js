@@ -11,9 +11,10 @@ function nameToHuman(name) {
 
 function candidate([name, data]) {
   return h(
-    'div',
+    'candidate-card',
     {
       class: `candidate ${data.suspended ? 'suspended' : ''}`,
+      name: name,
     },
     h('img', {
       class: 'candidate-image',
