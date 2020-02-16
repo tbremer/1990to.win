@@ -3,7 +3,7 @@ const express = require('express');
 const { readFile } = require('fs');
 const { extname } = require('path');
 
-const shutdown = require('./shtudown');
+const shutdown = require('./shutdown');
 const render = require('./renderer');
 const h = require('./renderer/h');
 const home = require('./pages/home');
