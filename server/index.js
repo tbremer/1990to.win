@@ -46,6 +46,7 @@ shutdown(
 app.use(
   (req, _, next) => {
     req.context = require('../data.json');
+    req.states = require('../states.json');
     next();
   },
   (req, res, next) => {
@@ -129,7 +130,9 @@ app.use(
             ),
             h(
               'body',
-              null,
+              {
+                onclick: `document.querySelector('.candidate.active') && document.querySelector('.candidate.active').classList.remove('active');`
+              },
               h(
                 'div',
                 {
@@ -139,7 +142,7 @@ app.use(
                 logo()
               ),
               typeof component === 'function'
-                ? component(req.context)
+                ? component(req.context, req.states)
                 : component
             )
           )
