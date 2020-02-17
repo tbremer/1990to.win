@@ -1,9 +1,9 @@
 const { createServer, STATUS_CODES } = require('http');
 const express = require('express');
-const { readFile } = require('fs');
+const { readFile, readdirSync } = require('fs');
 const { extname } = require('path');
 
-const shutdown = require('./shtudown');
+const shutdown = require('./shutdown');
 const render = require('./renderer');
 const h = require('./renderer/h');
 const home = require('./pages/home');
@@ -13,6 +13,7 @@ const app = express();
 
 if (process.env.NODE_ENV === 'dev') require('dotenv').config();
 
+const jsBundle = readdirSync('assets').find(f => f.endsWith('bundle.js'));
 const fileCache = new Map();
 const MIME_TYPES = Object.entries({
   css: 'text/css',
@@ -124,7 +125,11 @@ app.use(
 
               h('title', null, '1,990 to win'),
               h('link', { href: '/assets/style.css', rel: 'stylesheet' }),
-              h('link', { href: '/assets/images/favicon.png', rel: 'icon' })
+              h('link', { href: '/assets/images/favicon.png', rel: 'icon' }),
+              h('script', {
+                src: `/assets/${jsBundle}`,
+                type: 'text/javascript',
+              })
             ),
             h(
               'body',
