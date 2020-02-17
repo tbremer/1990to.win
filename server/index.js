@@ -13,7 +13,11 @@ const app = express();
 
 if (process.env.NODE_ENV === 'dev') require('dotenv').config();
 
-const jsBundle = readdirSync('assets').find(f => f.endsWith('bundle.js'));
+const jsBundle =
+  process.env.NODE_ENV === 'dev'
+    ? 'bundle.js'
+    : readdirSync('assets').find(f => f.endsWith('bundle.js'));
+
 const fileCache = new Map();
 const MIME_TYPES = Object.entries({
   css: 'text/css',
