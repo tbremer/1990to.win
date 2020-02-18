@@ -14,22 +14,21 @@ const app = express();
 if (process.env.NODE_ENV === 'dev') require('dotenv').config();
 
 const fileCache = new Map();
-const MIME_TYPES = {
-  '.css': 'text/css',
+const MIME_TYPES = Object.entries({
   css: 'text/css',
-
-  '.jpeg': 'image/jpeg',
   jpeg: 'image/jpeg',
-
-  '.jpg': 'image/jpeg',
   jpg: 'image/jpeg',
-
-  '.woff2': 'font/woff2',
   woff2: 'font/woff2',
-
-  '.svg': 'image/svg+xml',
   svg: 'image/svg+xml',
-};
+  js: 'application/javascript',
+}).reduce(
+  (allTypes, [ext, mimeType]) => ({
+    ...allTypes,
+    [ext]: mimeType,
+    [`.${ext}`]: mimeType,
+  }),
+  {}
+);
 
 function sendResponse(stream, head, body) {
   stream.writeHead(...head);
