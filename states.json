@@ -1,0 +1,629 @@
+{
+    "iowa": {
+        "date": "02/03/2020",
+        "delegates": {
+            "district": 27,
+            "at-large": 9,
+            "pledged": 5,
+            "pleo": 41,
+            "unpledged": 8,
+            "total": 49
+        }
+    },
+    "new-hampshire": {
+        "date": "02/11/2020",
+        "delegates": {
+            "district": 16,
+            "at-large": 5,
+            "pleo": 3,
+            "pledged": 24,
+            "unpledged": 9,
+            "total": 33
+        }
+    },
+    "nevada": {
+        "date": "02/22/2020",
+        "delegates": {
+            "district": 23,
+            "at-large": 8,
+            "pleo": 5,
+            "pledged": 36,
+            "unpledged": 12,
+            "total": 48
+        }
+    },
+    "south-carolina": {
+        "date": "02/29/2020",
+        "delegates": {
+            "district": 35,
+            "at-large": 12,
+            "pleo": 7,
+            "pledged": 54,
+            "unpledged": 9,
+            "total": 63
+        }
+    },
+    "alabama": {
+        "date": "03/03/2020",
+        "delegates": {
+            "district": 34,
+            "at-large": 11,
+            "pleo": 7,
+            "pledged": 52,
+            "unpledged": 9,
+            "total": 61
+        }
+    },
+    "american-samoa": {
+        "date": "03/03/2020",
+        "delegates": {
+            "district": 0,
+            "at-large": 6,
+            "pleo": 0,
+            "pledged": 6,
+            "unpledged": 5,
+            "total": 11
+        }
+    },
+    "democrats-abroad": {
+        "date": "03/03/2020",
+        "delegates": {
+            "district": 0,
+            "at-large": 12,
+            "pleo": 1,
+            "pledged": 13,
+            "unpledged": 4,
+            "total": 17
+        }
+    },
+    "arkansas": {
+        "date": "03/03/2020",
+        "delegates": {
+            "district": 20,
+            "at-large": 7,
+            "pleo": 4,
+            "pledged": 31,
+            "unpledged": 5,
+            "total": 36
+        }
+    },
+    "california": {
+        "date": "03/03/2020",
+        "delegates": {
+            "district": 271,
+            "at-large": 90,
+            "pleo": 54,
+            "pledged": 415,
+            "unpledged": 79,
+            "total": 494
+        }
+    },
+    "colorado": {
+        "date": "03/03/2020",
+        "delegates": {
+            "district": 44,
+            "at-large": 14,
+            "pleo": 9,
+            "pledged": 67,
+            "unpledged": 13,
+            "total": 80
+        }
+    },
+    "maine": {
+        "date": "03/03/2020",
+        "delegates": {
+            "district": 16,
+            "at-large": 5,
+            "pleo": 3,
+            "pledged": 24,
+            "unpledged": 8,
+            "total": 32
+        }
+    },
+    "massachusetts": {
+        "date": "03/03/2020",
+        "delegates": {
+            "district": 59,
+            "at-large": 20,
+            "pleo": 12,
+            "pledged": 91,
+            "unpledged": 23,
+            "total": 114
+        }
+    },
+    "minnesota": {
+        "date": "03/03/2020",
+        "delegates": {
+            "district": 49,
+            "at-large": 16,
+            "pleo": 10,
+            "pledged": 75,
+            "unpledged": 16,
+            "total": 91
+        }
+    },
+    "north-carolina": {
+        "date": "03/03/2020",
+        "delegates": {
+            "district": 72,
+            "at-large": 24,
+            "pleo": 14,
+            "pledged": 110,
+            "unpledged": 12,
+            "total": 122
+        }
+    },
+    "oklahoma": {
+        "date": "03/03/2020",
+        "delegates": {
+            "district": 24,
+            "at-large": 8,
+            "pleo": 5,
+            "pledged": 37,
+            "unpledged": 5,
+            "total": 42
+        }
+    },
+    "tennessee": {
+        "date": "03/03/2020",
+        "delegates": {
+            "district": 42,
+            "at-large": 14,
+            "pleo": 8,
+            "pledged": 64,
+            "unpledged": 9,
+            "total": 73
+        }
+    },
+    "texas": {
+        "date": "03/03/2020",
+        "delegates": {
+            "district": 149,
+            "at-large": 49,
+            "pleo": 30,
+            "pledged": 228,
+            "unpledged": 33,
+            "total": 261
+        }
+    },
+    "utah": {
+        "date": "03/03/2020",
+        "delegates": {
+            "district": 19,
+            "at-large": 6,
+            "pleo": 4,
+            "pledged": 29,
+            "unpledged": 6,
+            "total": 35
+        }
+    },
+    "vermont": {
+        "date": "03/03/2020",
+        "delegates": {
+            "district": 11,
+            "at-large": 3,
+            "pleo": 2,
+            "pledged": 16,
+            "unpledged": 8,
+            "total": 24
+        }
+    },
+    "virginia": {
+        "date": "03/03/2020",
+        "delegates": {
+            "district": 65,
+            "at-large": 21,
+            "pleo": 13,
+            "pledged": 99,
+            "unpledged": 25,
+            "total": 124
+        }
+    },
+    "idaho": {
+        "date": "03/10/2020",
+        "delegates": {
+            "district": 13,
+            "at-large": 4,
+            "pleo": 3,
+            "pledged": 20,
+            "unpledged": 5,
+            "total": 25
+        }
+    },
+    "michigan": {
+        "date": "03/10/2020",
+        "delegates": {
+            "district": 82,
+            "at-large": 27,
+            "pleo": 16,
+            "pledged": 125,
+            "unpledged": 22,
+            "total": 147
+        }
+    },
+    "mississippi": {
+        "date": "03/10/2020",
+        "delegates": {
+            "district": 23,
+            "at-large": 8,
+            "pleo": 5,
+            "pledged": 36,
+            "unpledged": 5,
+            "total": 41
+        }
+    },
+    "missouri": {
+        "date": "03/10/2020",
+        "delegates": {
+            "district": 44,
+            "at-large": 15,
+            "pleo": 9,
+            "pledged": 68,
+            "unpledged": 10,
+            "total": 78
+        }
+    },
+    "north-dakota": {
+        "date": "03/10/2020",
+        "delegates": {
+            "district": 9,
+            "at-large": 3,
+            "pleo": 2,
+            "pledged": 14,
+            "unpledged": 4,
+            "total": 18
+        }
+    },
+    "washington": {
+        "date": "03/10/2020",
+        "delegates": {
+            "district": 58,
+            "at-large": 19,
+            "pleo": 12,
+            "pledged": 89,
+            "unpledged": 19,
+            "total": 108
+        }
+    },
+    "northern-marianas": {
+        "date": "03/14/2020",
+        "delegates": {
+            "district": 0,
+            "at-large": 6,
+            "pleo": 0,
+            "pledged": 6,
+            "unpledged": 5,
+            "total": 11
+        }
+    },
+    "arizona": {
+        "date": "03/17/2020",
+        "delegates": {
+            "district": 44,
+            "at-large": 14,
+            "pleo": 9,
+            "pledged": 67,
+            "unpledged": 12,
+            "total": 79
+        }
+    },
+    "florida": {
+        "date": "03/17/2020",
+        "delegates": {
+            "district": 143,
+            "at-large": 47,
+            "pleo": 29,
+            "pledged": 219,
+            "unpledged": 29,
+            "total": 248
+        }
+    },
+    "illinois": {
+        "date": "03/17/2020",
+        "delegates": {
+            "district": 101,
+            "at-large": 34,
+            "pleo": 20,
+            "pledged": 155,
+            "unpledged": 29,
+            "total": 184
+        }
+    },
+    "ohio": {
+        "date": "03/17/2020",
+        "delegates": {
+            "district": 89,
+            "at-large": 29,
+            "pleo": 18,
+            "pledged": 136,
+            "unpledged": 17,
+            "total": 153
+        }
+    },
+    "georgia": {
+        "date": "03/24/2020",
+        "delegates": {
+            "district": 68,
+            "at-large": 23,
+            "pleo": 14,
+            "pledged": 105,
+            "unpledged": 15,
+            "total": 120
+        }
+    },
+    "puerto-rico": {
+        "date": "03/29/2020",
+        "delegates": {
+            "district": 33,
+            "at-large": 11,
+            "pleo": 7,
+            "pledged": 51,
+            "unpledged": 7,
+            "total": 58
+        }
+    },
+    "alaska": {
+        "date": "04/04/2020",
+        "delegates": {
+            "district": 9,
+            "at-large": 4,
+            "pleo": 2,
+            "pledged": 15,
+            "unpledged": 4,
+            "total": 19
+        }
+    },
+    "hawaii": {
+        "date": "04/04/2020",
+        "delegates": {
+            "district": 15,
+            "at-large": 6,
+            "pleo": 3,
+            "pledged": 24,
+            "unpledged": 9,
+            "total": 33
+        }
+    },
+    "louisiana": {
+        "date": "04/04/2020",
+        "delegates": {
+            "district": 35,
+            "at-large": 12,
+            "pleo": 7,
+            "pledged": 54,
+            "unpledged": 7,
+            "total": 61
+        }
+    },
+    "wyoming": {
+        "date": "04/04/2020",
+        "delegates": {
+            "district": 8,
+            "at-large": 4,
+            "pleo": 2,
+            "pledged": 14,
+            "unpledged": 4,
+            "total": 18
+        }
+    },
+    "wisconsin": {
+        "date": "04/07/2020",
+        "delegates": {
+            "district": 55,
+            "at-large": 19,
+            "pleo": 10,
+            "pledged": 84,
+            "unpledged": 13,
+            "total": 97
+        }
+    },
+    "connecticut": {
+        "date": "04/28/2020",
+        "delegates": {
+            "district": 40,
+            "at-large": 14,
+            "pleo": 6,
+            "pledged": 60,
+            "unpledged": 14,
+            "total": 74
+        }
+    },
+    "delaware": {
+        "date": "04/28/2020",
+        "delegates": {
+            "district": 14,
+            "at-large": 5,
+            "pleo": 2,
+            "pledged": 21,
+            "unpledged": 12,
+            "total": 33
+        }
+    },
+    "maryland": {
+        "date": "04/28/2020",
+        "delegates": {
+            "district": 65,
+            "at-large": 21,
+            "pleo": 10,
+            "pledged": 96,
+            "unpledged": 23,
+            "total": 119
+        }
+    },
+    "new-york": {
+        "date": "04/28/2020",
+        "delegates": {
+            "district": 184,
+            "at-large": 61,
+            "pleo": 29,
+            "pledged": 274,
+            "unpledged": 46,
+            "total": 320
+        }
+    },
+    "pennsylvania": {
+        "date": "04/28/2020",
+        "delegates": {
+            "district": 125,
+            "at-large": 41,
+            "pleo": 20,
+            "pledged": 186,
+            "unpledged": 24,
+            "total": 210
+        }
+    },
+    "rhode island": {
+        "date": "04/28/2020",
+        "delegates": {
+            "district": 18,
+            "at-large": 5,
+            "pleo": 3,
+            "pledged": 26,
+            "unpledged": 10,
+            "total": 36
+        }
+    },
+    "kansas": {
+        "date": "05/02/2020",
+        "delegates": {
+            "district": 26,
+            "at-large": 9,
+            "pleo": 4,
+            "pledged": 39,
+            "unpledged": 6,
+            "total": 45
+        }
+    },
+    "guam": {
+        "date": "05/02/2020",
+        "delegates": {
+            "district": 0,
+            "at-large": 7,
+            "pleo": 0,
+            "pledged": 7,
+            "unpledged": 5,
+            "total": 12
+        }
+    },
+    "indiana": {
+        "date": "05/05/2020",
+        "delegates": {
+            "district": 55,
+            "at-large": 18,
+            "pleo": 9,
+            "pledged": 82,
+            "unpledged": 7,
+            "total": 89
+        }
+    },
+    "nebraska": {
+        "date": "05/12/2020",
+        "delegates": {
+            "district": 20,
+            "at-large": 6,
+            "pleo": 3,
+            "pledged": 29,
+            "unpledged": 4,
+            "total": 33
+        }
+    },
+    "west-virginia": {
+        "date": "05/12/2020",
+        "delegates": {
+            "district": 19,
+            "at-large": 6,
+            "pleo": 3,
+            "pledged": 28,
+            "unpledged": 6,
+            "total": 34
+        }
+    },
+    "kentucky": {
+        "date": "05/19/2020",
+        "delegates": {
+            "district": 36,
+            "at-large": 12,
+            "pleo": 6,
+            "pledged": 54,
+            "unpledged": 6,
+            "total": 60
+        }
+    },
+    "oregon": {
+        "date": "05/19/2020",
+        "delegates": {
+            "district": 41,
+            "at-large": 13,
+            "pleo": 7,
+            "pledged": 61,
+            "unpledged": 14,
+            "total": 75
+        }
+    },
+    "district-of-columbia": {
+        "date": "06/02/2020",
+        "delegates": {
+            "district": 13,
+            "at-large": 5,
+            "pleo": 2,
+            "pledged": 20,
+            "unpledged": 26,
+            "total": 46
+        }
+    },
+    "montana": {
+        "date": "06/02/2020",
+        "delegates": {
+            "district": 13,
+            "at-large": 4,
+            "pleo": 2,
+            "pledged": 19,
+            "unpledged": 6,
+            "total": 25
+        }
+    },
+    "new-jersey": {
+        "date": "06/02/2020",
+        "delegates": {
+            "district": 84,
+            "at-large": 28,
+            "pleo": 14,
+            "pledged": 126,
+            "unpledged": 21,
+            "total": 147
+        }
+    },
+    "new-mexico": {
+        "date": "06/02/2020",
+        "delegates": {
+            "district": 23,
+            "at-large": 7,
+            "pleo": 4,
+            "pledged": 34,
+            "unpledged": 11,
+            "total": 45
+        }
+    },
+    "south-dakota": {
+        "date": "06/02/2020",
+        "delegates": {
+            "district": 10,
+            "at-large": 4,
+            "pleo": 2,
+            "pledged": 16,
+            "unpledged": 5,
+            "total": 21
+        }
+    },
+    "virgin-islands": {
+        "date": "06/06/2020",
+        "delegates": {
+            "district": 0,
+            "at-large": 7,
+            "pleo": 0,
+            "pledged": 7,
+            "unpledged": 6,
+            "total": 13
+        }
+    }
+}

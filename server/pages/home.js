@@ -13,7 +13,8 @@ function candidate([name, data]) {
   return h(
     'candidate-card',
     {
-      class: `candidate ${data.suspended ? 'suspended' : ''}`,
+      class: `candidate ${name} ${data.suspended ? 'suspended' : ''}`,
+      onclick: `document.querySelector('.candidate.active:not(.${name})') && document.querySelector('.candidate.active:not(.${name})').classList.remove('active'); this.classList.toggle('active'); event.stopImmediatePropagation();`,
       name: name,
     },
     h('img', {
@@ -21,6 +22,31 @@ function candidate([name, data]) {
       src: data.photo,
       alt: `Portrant of ${nameToHuman(name)}.`,
     }),
+    h(
+      'svg', {
+        style: 'position: absolute; left: 13px; transform: rotate(-90deg);',
+        width: 80,
+        height: 80
+      },
+      h('circle', {
+        stroke: '#CCCCCC',
+        'stroke-width': 4,
+        fill: 'transparent',
+        r: 38,
+        cx: 40,
+        cy: 40
+      }),
+      h('circle', {
+        'stroke-dasharray': '238.76104167282426 238.76104167282426',
+        style: `stroke-dashoffset: ${getProgress(data.delegates.reduce(addDelegates, 0))};`,
+        stroke: '#29a0cb',
+        'stroke-width': 4,
+        fill: 'transparent',
+        r: 38,
+        cx: 40,
+        cy: 40
+      })
+    ),
     h(
       'div',
       { class: 'candidate-meta' },
@@ -45,6 +71,22 @@ function candidate([name, data]) {
       ),
       data.suspended &&
         h('p', { style: 'margin: 0;' }, 'Suspended on:', data.suspended)
+    ),
+    h(
+      'div',
+      { class: 'candidate-overview' },
+      h('h3', { style: 'margin: 0; padding: 0;' }, 'Delegates'),
+      h('ul', { class: 'delegates' },
+        // @TODO: Remove these manual entries once we sort out how to load them dynamically
+        data.delegates[1] && h('li', { class: 'delegate' }, `${nameToHuman(data.delegates[1].state)}: ${data.delegates[1].count}`),
+        data.delegates[0] && h('li', { class: 'delegate' }, `${nameToHuman(data.delegates[0].state)}: ${data.delegates[0].count}`),
+
+        // @TODO: Figure out why this does not work.  Logs correctly, but does not render
+        data.delegates.forEach(delegate => {
+          // console.log(`${nameToHuman(delegate.state)}: ${delegate.count}`)
+          h('li', { class: 'delegate' }, `${nameToHuman(delegate.state)}: ${delegate.count}`)
+        })
+      )
     )
   );
 }
@@ -53,7 +95,18 @@ function addDelegates(total, { count }) {
   return total + count;
 }
 
-function home(context) {
+function getProgress(count) {
+  const circumference = 238.76104167282426;
+  const percent = Math.ceil((count / 1990) * 100);
+
+  if (percent > 100) {
+    percent = 100;
+  }
+
+  return circumference - (percent / 100 * circumference);
+}
+
+function home(context, states) {
   const entries = Object.entries(context);
   const active = entries.filter(([, { suspended }]) => !suspended);
   const suspended = entries.filter(([, { suspended }]) => suspended);

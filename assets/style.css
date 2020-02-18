@@ -43,6 +43,7 @@ html,
 body {
     margin: 0;
     border: 0;
+    height: 100%;
 }
 
 body {
@@ -69,10 +70,44 @@ body {
     align-items: center;
     padding: 1rem;
     border-bottom: 1px solid #dcdee0;
+    position: relative;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    overflow: hidden;
+}
+
+.candidate.active {
+    overflow: visible;
+    transform: scale(1.05);
+    z-index: 500;
 }
 
 .candidate:last-child {
     border-color: transparent;
+}
+
+.candidate .candidate-overview {
+    background-color: #f7fafc;
+    height: 0;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 1rem;
+    position: absolute;
+    top: calc(100% - 0.5rem);
+    width: calc(100% - 2rem);
+    z-index: -1;
+}
+
+.candidate.active .candidate-overview {
+    border-radius: 0 0 0.5rem 0.5rem;
+    box-shadow: 0 4px 0 -1px #29a0cb;
+    display: block;
+    height: auto;
+    margin-bottom: 2rem;
+    opacity: 1;
+    overflow: visible;
+    z-index: 500;
 }
 
 .candidate-image {
@@ -94,6 +129,18 @@ body {
 
 .suspended img {
     filter: grayscale(1);
+}
+
+.suspended.active {
+    opacity: 1;
+}
+
+.suspended.active .candidate-overview {
+    box-shadow: 0 4px 0 -1px #565c65;
+}
+
+.delegates {
+    padding-left: 1rem;
 }
 
 @media screen and (min-width: 700px) {

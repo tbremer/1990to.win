@@ -3,7 +3,7 @@ const express = require('express');
 const { readFile } = require('fs');
 const { extname } = require('path');
 
-const shutdown = require('./shtudown');
+const shutdown = require('./shutdown');
 const render = require('./renderer');
 const h = require('./renderer/h');
 const home = require('./pages/home');
@@ -45,6 +45,7 @@ shutdown(
 app.use(
   (req, _, next) => {
     req.context = require('../data.json');
+    req.states = require('../states.json');
     next();
   },
   (req, res, next) => {
@@ -128,7 +129,9 @@ app.use(
             ),
             h(
               'body',
-              null,
+              {
+                onclick: `document.querySelector('.candidate.active') && document.querySelector('.candidate.active').classList.remove('active');`
+              },
               h(
                 'div',
                 {
@@ -138,7 +141,7 @@ app.use(
                 logo()
               ),
               typeof component === 'function'
-                ? component(req.context)
+                ? component(req.context, req.states)
                 : component
             )
           )
