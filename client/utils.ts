@@ -1,3 +1,7 @@
+interface CustomElementConstructor {
+  new (): HTMLElement
+}
+
 export function safelyDefine(
   elementName: string,
   customElement: CustomElementConstructor
