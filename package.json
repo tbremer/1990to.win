@@ -1,7 +1,7 @@
 {
   "name": "1990towin",
   "scripts": {
-    "start": "NODE_ENV=dev nodemon -w ./ -e css,js,json,html ./server/index.js",
+    "start": "node ./server/index.js",
     "build:client": "webpack -p",
     "dev:client": "webpack --watch --mode=development",
     "dev:server": "NODE_ENV=dev nodemon -w ./ -e css,js,json,html ./server/index.js",

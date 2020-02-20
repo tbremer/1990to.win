@@ -23,4 +23,4 @@ RUN npm install --only=prod
 # RUN ls -la
 # RUN ls -la server
 
-CMD ["node", "server/index.js"]
+CMD ["npm", "start"]
