@@ -10,11 +10,7 @@ const config = {
         exclude: /node_modules/,
       },
       {
-        test: /\.css$/i,
-        use: ['css-loader'],
-      },
-      {
-        test: /\.s[ac]ss$/i,
+        test: /\.scss$/i,
         use: ['css-loader', 'sass-loader'],
       },
     ],
