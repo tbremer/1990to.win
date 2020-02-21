@@ -6,7 +6,8 @@
     "dev:client": "webpack --watch --mode=development",
     "dev:server": "NODE_ENV=dev nodemon -w ./ -e css,js,json,html ./server/index.js",
     "predev": "cmp -s package.json ._package.json || (npm install && cp package.json ._package.json)",
-    "dev": "npm-run-all -p dev:*"
+    "dev": "npm-run-all -p dev:*",
+    "lint:client": "eslint --ext .ts client"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",

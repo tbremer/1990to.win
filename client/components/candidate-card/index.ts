@@ -1,4 +1,5 @@
 import { Component, ConfigOptions, AttrsSchema, h } from 'panel';
+import { VNode } from 'snabbdom/vnode';
 
 import { safelyDefine } from '../../utils';
 
@@ -27,7 +28,7 @@ export default class DelegateCard extends Component<
         showDetails: false,
       },
       helpers: {},
-      template: ({ $attr, $helpers, showDetails }) => {
+      template: ({ $attr, $helpers, showDetails }): VNode => {
         if (showDetails) {
           return h('div', 'Details');
         }
