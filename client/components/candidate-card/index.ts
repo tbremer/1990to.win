@@ -28,7 +28,7 @@ export default class DelegateCard extends Component<
         showDetails: false,
       },
       helpers: {},
-      template: ({ $attr, $helpers, showDetails }): VNode => {
+      template: ({ showDetails }): VNode => {
         if (showDetails) {
           return h('div', 'Details');
         }
