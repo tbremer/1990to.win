@@ -1,7 +1,7 @@
 export function safelyDefine(
   elementName: string,
   customElement: CustomElementConstructor
-) {
+): void {
   if (customElements.get(elementName)) {
     console.warn(`Trying to redefine elementName skipping`);
     return;
@@ -10,7 +10,7 @@ export function safelyDefine(
   return;
 }
 
-export function injectStyles(elementName: string, css: string) {
+export function injectStyles(elementName: string, css: string): void {
   const existingStyles = document.getElementById(elementName);
   if (!existingStyles) {
     const styleNode = document.createElement('style');
