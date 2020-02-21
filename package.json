@@ -35,8 +35,8 @@
     "express": "^4.17.1"
   },
   "lint-staged": {
-    "*.{js,ts}": [
-      "prettier --fix "
+    "*.{js,ts,css}": [
+      "prettier . --write"
     ]
   },
   "husky": {
