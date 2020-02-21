@@ -3,10 +3,12 @@
   "scripts": {
     "install-if-needed": "cmp -s package.json ._package.json || (npm install && cp package.json ._package.json)",
     "start": "node ./server/index.js",
-    "build:client": "npm run install-if-needed && webpack -p",
+    "prebuild:client": "npm run install-if-needed",
+    "build:client": "webpack -p",
     "dev:client": "webpack --watch --mode=development",
     "dev:server": "NODE_ENV=dev nodemon -w ./ -e css,js,json,html ./server/index.js",
-    "dev": "npm run install-if-needed && npm-run-all -p dev:*"
+    "predev": "npm run install-if-needed",
+    "dev": "npm-run-all -p dev:*"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
