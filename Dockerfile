@@ -3,6 +3,7 @@ FROM node:lts AS build
 WORKDIR /app
 COPY . ./
 
+RUN npm install
 RUN npm run build:client
 
 
