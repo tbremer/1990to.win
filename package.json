@@ -39,9 +39,7 @@
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11"
   },
-  "dependencies": {
-    "express": "^4.17.1"
-  },
+  "dependencies": {},
   "lint-staged": {
     "*.{js,ts,css}": [
       "prettier --write"
