@@ -32,7 +32,7 @@ function candidate([name, data]) {
             style:
               'margin: .25rem 0; font-size: .95rem; color:#28A0CB; font-style:italic;',
           },
-          'New Hampshire Projection:',
+          'Nevada Projection:',
           data.projection.count
         ),
       h(
