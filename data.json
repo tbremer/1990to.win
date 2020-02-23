@@ -28,7 +28,6 @@
   },
   "bernie-sanders": {
     "photo": "/assets/images/bernie-sanders.jpg",
-    "projection": { "count": 16 },
     "delegates": [
       {
         "count": 12,
@@ -37,7 +36,8 @@
       {
         "count": 9,
         "state": "new hampshire"
-      }
+      },
+{"count":8,"state":"nevada"}
     ]
   },
   "deval-patrick": {
@@ -68,7 +68,6 @@
   },
   "joe-biden": {
     "photo": "/assets/images/joe-biden.jpg",
-    "projection": { "count": 8 },
     "delegates": [
       {
         "count": 6,
