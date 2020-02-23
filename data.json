@@ -28,7 +28,7 @@
   },
   "bernie-sanders": {
     "photo": "/assets/images/bernie-sanders.jpg",
-    "projection": { "count": 19 },
+    "projection": { "count": 16 },
     "delegates": [
       {
         "count": 12,
@@ -55,7 +55,6 @@
   },
   "elizabeth-warren": {
     "photo": "/assets/images/elizabeth-warren.jpg",
-    "projection": { "count": 3 },
     "delegates": [
       {
         "count": 8,
@@ -69,7 +68,7 @@
   },
   "joe-biden": {
     "photo": "/assets/images/joe-biden.jpg",
-    "projection": { "count": 6 },
+    "projection": { "count": 8 },
     "delegates": [
       {
         "count": 6,
@@ -116,7 +115,6 @@
   },
   "pete-buttigieg": {
     "photo": "/assets/images/pete-buttigieg.jpg",
-    "projection": { "count": 3 },
     "delegates": [
       {
         "count": 13,
@@ -130,7 +128,6 @@
   },
   "tom-steyer": {
     "photo": "/assets/images/tom-steyer.jpg",
-    "projection": { "count": 2 },
     "delegates": [
       {
         "count": 0,
