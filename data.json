@@ -37,7 +37,10 @@
         "count": 9,
         "state": "new hampshire"
       },
-{"count":8,"state":"nevada"}
+      {
+        "count":10,
+        "state":"nevada"
+      }
     ]
   },
   "deval-patrick": {
