@@ -38,8 +38,8 @@
         "state": "new hampshire"
       },
       {
-        "count":10,
-        "state":"nevada"
+        "count": 14,
+        "state": "nevada"
       }
     ]
   },
@@ -79,6 +79,10 @@
       {
         "count": 0,
         "state": "new hampshire"
+      },
+      {
+        "count": 4,
+        "state": "nevada"
       }
     ]
   },
@@ -125,6 +129,10 @@
       {
         "count": 9,
         "state": "new hampshire"
+      },
+      {
+        "count": 2,
+        "state": "nevada"
       }
     ]
   },
