@@ -6,7 +6,6 @@ COPY . ./
 RUN npm install
 RUN npm run build:client
 
-
 FROM node:lts-alpine
 
 WORKDIR /app
@@ -16,6 +15,7 @@ COPY package.json ./
 COPY package-lock.json ./
 COPY data.json ./
 COPY server/ server/
+COPY lib/ lib/
 COPY --from=build /app/assets/ assets/
 
 RUN npm install --only=prod
