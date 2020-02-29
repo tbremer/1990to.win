@@ -18,6 +18,8 @@ function doctype(tree) {
 }
 
 function render(tree) {
+  if (Array.isArray(tree)) return tree.map(render);
+  // console.log(tree);
   if (tree === undefined) return null;
   if (typeof tree === 'string' || typeof tree === 'number')
     return tree.toString();

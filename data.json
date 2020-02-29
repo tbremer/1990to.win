@@ -1,6 +1,7 @@
 {
   "amy-klobuchar": {
     "photo": "/assets/images/amy-klobuchar.jpg",
+    "projection": [],
     "delegates": [
       {
         "count": 1,
@@ -8,12 +9,17 @@
       },
       {
         "count": 6,
-        "state": "new hampshire"
+        "state": "new-hampshire"
+      },
+      {
+        "count": 0,
+        "state": "nevada"
       }
     ]
   },
   "andrew-yang": {
     "photo": "/assets/images/andrew-yang.jpg",
+    "projection": [],
     "delegates": [
       {
         "count": 0,
@@ -21,13 +27,14 @@
       },
       {
         "count": 0,
-        "state": "new hampshire"
+        "state": "new-hampshire"
       }
     ],
     "suspended": "02/11/2020"
   },
   "bernie-sanders": {
     "photo": "/assets/images/bernie-sanders.jpg",
+    "projection": [],
     "delegates": [
       {
         "count": 12,
@@ -35,7 +42,7 @@
       },
       {
         "count": 9,
-        "state": "new hampshire"
+        "state": "new-hampshire"
       },
       {
         "count": 24,
@@ -45,6 +52,7 @@
   },
   "deval-patrick": {
     "photo": "/assets/images/deval-patrick.jpg",
+    "projection": [],
     "delegates": [
       {
         "count": 0,
@@ -52,12 +60,17 @@
       },
       {
         "count": 0,
-        "state": "new hampshire"
+        "state": "new-hampshire"
+      },
+      {
+        "count": 0,
+        "state": "nevada"
       }
     ]
   },
   "elizabeth-warren": {
     "photo": "/assets/images/elizabeth-warren.jpg",
+    "projection": [],
     "delegates": [
       {
         "count": 8,
@@ -65,12 +78,17 @@
       },
       {
         "count": 0,
-        "state": "new hampshire"
+        "state": "new-hampshire"
+      },
+      {
+        "count": 0,
+        "state": "nevada"
       }
     ]
   },
   "joe-biden": {
     "photo": "/assets/images/joe-biden.jpg",
+    "projection": [],
     "delegates": [
       {
         "count": 6,
@@ -78,7 +96,7 @@
       },
       {
         "count": 0,
-        "state": "new hampshire"
+        "state": "new-hampshire"
       },
       {
         "count": 9,
@@ -88,6 +106,7 @@
   },
   "john-delaney": {
     "photo": "/assets/images/john-delaney.jpg",
+    "projection": [],
     "delegates": [
       {
         "count": 0,
@@ -98,6 +117,7 @@
   },
   "michael-bennet": {
     "photo": "/assets/images/michael-bennet.jpg",
+    "projection": [],
     "delegates": [
       {
         "count": 0,
@@ -105,22 +125,32 @@
       },
       {
         "count": 0,
-        "state": "new hampshire"
+        "state": "new-hampshire"
       }
     ],
     "suspended": "02/11/2020"
   },
   "michael-bloomberg": {
     "photo": "/assets/images/michael-bloomberg.jpg",
+    "projection": [],
     "delegates": [
       {
         "count": 0,
         "state": "iowa"
+      },
+      {
+        "count": 0,
+        "state": "new-hampshire"
+      },
+      {
+        "count": 0,
+        "state": "nevada"
       }
     ]
   },
   "pete-buttigieg": {
     "photo": "/assets/images/pete-buttigieg.jpg",
+    "projection": [],
     "delegates": [
       {
         "count": 13,
@@ -128,7 +158,7 @@
       },
       {
         "count": 9,
-        "state": "new hampshire"
+        "state": "new-hampshire"
       },
       {
         "count": 3,
@@ -138,6 +168,7 @@
   },
   "tom-steyer": {
     "photo": "/assets/images/tom-steyer.jpg",
+    "projection": [],
     "delegates": [
       {
         "count": 0,
@@ -145,12 +176,17 @@
       },
       {
         "count": 0,
-        "state": "new hampshire"
+        "state": "new-hampshire"
+      },
+      {
+        "count": 0,
+        "state": "nevada"
       }
     ]
   },
   "tulsi-gabbard": {
     "photo": "/assets/images/tulsi-gabbard.jpg",
+    "projection": [],
     "delegates": [
       {
         "count": 0,
@@ -158,7 +194,11 @@
       },
       {
         "count": 0,
-        "state": "new hampshire"
+        "state": "new-hampshire"
+      },
+      {
+        "count": 0,
+        "state": "nevada"
       }
     ]
   }

@@ -9,6 +9,21 @@ function nameToHuman(name) {
     );
 }
 
+function projections(arr) {
+  return arr.map(projection =>
+    h(
+      'p',
+      {
+        style:
+          'margin: .25rem 0; font-size: .95rem; color:#28A0CB; font-style:italic;',
+      },
+      nameToHuman(projection.name),
+      ' Projection:',
+      projection.count
+    )
+  );
+}
+
 function candidate([name, data]) {
   return h(
     'candidate-card',
@@ -25,16 +40,7 @@ function candidate([name, data]) {
       'div',
       { class: 'candidate-meta' },
       h('h2', { style: 'margin: 0; padding: 0;' }, nameToHuman(name)),
-      data.projection &&
-        h(
-          'p',
-          {
-            style:
-              'margin: .25rem 0; font-size: .95rem; color:#28A0CB; font-style:italic;',
-          },
-          'Nevada Projection:',
-          data.projection.count
-        ),
+      ...projections(data.projection || []),
       h(
         'p',
         {
