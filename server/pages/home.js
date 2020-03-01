@@ -73,14 +73,16 @@ function home(context) {
     return aTime < bTime ? 1 : aTime > bTime ? -1 : 0;
   });
 
-  const data = active.concat(suspended);
-
-  data.sort(([, { delegates: a }], [, { delegates: b }]) => {
+  active.sort(([, { delegates: a }], [, { delegates: b }]) => {
     const aCount = a.reduce(addDelegates, 0);
     const bCount = b.reduce(addDelegates, 0);
 
     return aCount < bCount ? 1 : aCount > bCount ? -1 : 0;
   });
+
+  const data = active.concat(suspended);
+
+  // data.sort();
 
   return h(
     'main',
