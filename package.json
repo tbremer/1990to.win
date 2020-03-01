@@ -41,7 +41,7 @@
   },
   "dependencies": {},
   "lint-staged": {
-    "*.{js,ts,css}": [
+    "*.{js,ts,css,json}": [
       "prettier --write"
     ],
     "client/**/*.ts": [
