@@ -35,10 +35,7 @@
   "bernie-sanders": {
     "photo": "/assets/images/bernie-sanders.jpg",
     "projection": [
-      {
-        "state": "south-carolina",
-        "count": 7
-      }
+     
     ],
     "delegates": [
       {
@@ -52,6 +49,11 @@
       {
         "count": 24,
         "state": "nevada"
+      },
+
+{
+        "state": "south-carolina",
+        "count": 12
       }
     ]
   },
@@ -94,10 +96,7 @@
   "joe-biden": {
     "photo": "/assets/images/joe-biden.jpg",
     "projection": [
-      {
-        "state": "south-carolina",
-        "count": 28
-      }
+
     ],
     "delegates": [
       {
@@ -111,7 +110,13 @@
       {
         "count": 9,
         "state": "nevada"
+      },
+
+      {
+        "state": "south-carolina",
+        "count": 28
       }
+
     ]
   },
   "john-delaney": {
