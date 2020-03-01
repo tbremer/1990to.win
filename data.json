@@ -34,7 +34,12 @@
   },
   "bernie-sanders": {
     "photo": "/assets/images/bernie-sanders.jpg",
-    "projection": [],
+    "projection": [
+      {
+        "state": "south-carolina",
+        "count": 6
+      }
+    ],
     "delegates": [
       {
         "count": 12,
@@ -88,7 +93,12 @@
   },
   "joe-biden": {
     "photo": "/assets/images/joe-biden.jpg",
-    "projection": [],
+    "projection": [
+      {
+        "state": "south-carolina",
+        "count": 25
+      }
+    ],
     "delegates": [
       {
         "count": 6,
@@ -182,7 +192,8 @@
         "count": 0,
         "state": "nevada"
       }
-    ]
+    ],
+    "suspended": "02/29/2020"
   },
   "tulsi-gabbard": {
     "photo": "/assets/images/tulsi-gabbard.jpg",

@@ -17,7 +17,7 @@ function projections(arr) {
         style:
           'margin: .25rem 0; font-size: .95rem; color:#28A0CB; font-style:italic;',
       },
-      nameToHuman(projection.name),
+      nameToHuman(projection.state),
       ' Projection:',
       projection.count
     )
