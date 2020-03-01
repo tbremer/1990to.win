@@ -53,7 +53,7 @@ module.exports = pipe(
 
     if (!fileCache.has(path)) fileCache.set(path, file);
 
-    console.log(fileCache);
+    // console.log(fileCache);
 
     res.asset = file;
   })
