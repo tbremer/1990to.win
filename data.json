@@ -15,7 +15,7 @@
         "count": 0,
         "state": "nevada"
       }
-    ] ,
+    ],
     "suspended": "03/02/2020"
   },
   "andrew-yang": {
@@ -52,7 +52,7 @@
 
       {
         "state": "south-carolina",
-        "count": 13
+        "count": 15
       }
     ]
   },
@@ -72,7 +72,8 @@
         "count": 0,
         "state": "nevada"
       }
-    ]
+    ],
+    "suspended": "02/12/2020"
   },
   "elizabeth-warren": {
     "photo": "/assets/images/elizabeth-warren.jpg",
@@ -111,7 +112,7 @@
 
       {
         "state": "south-carolina",
-        "count": 35
+        "count": 39
       }
     ]
   },

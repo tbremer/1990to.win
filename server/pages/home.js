@@ -29,6 +29,7 @@ function candidate([name, data]) {
     'candidate-card',
     {
       class: `candidate ${data.suspended ? 'suspended' : ''}`,
+      data: JSON.stringify(data),
       name: name,
     },
     h('img', {
