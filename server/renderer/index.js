@@ -7,14 +7,7 @@ function createNode(name) {
 }
 function createAttribute(key, value) {
   if (value === false) return '';
-  if (value === true) return `${key}="${key}"`;
-  const quoteStyle = /"/.test(value) ? "'" : '"';
-  let attr = `${key}=`;
-  attr += quoteStyle;
-  attr += value;
-  attr += quoteStyle;
-
-  return attr;
+  return `${key}="${value === true ? key : value.replace(/"/g, '&quot;')}"`;
 }
 
 function doctype(tree) {
