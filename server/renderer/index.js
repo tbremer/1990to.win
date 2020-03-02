@@ -7,8 +7,7 @@ function createNode(name) {
 }
 function createAttribute(key, value) {
   if (value === false) return '';
-
-  return `${key}="${value === true ? key : value}"`;
+  return `${key}="${value === true ? key : value.replace(/"/g, '&quot;')}"`;
 }
 
 function doctype(tree) {
