@@ -79,29 +79,24 @@ function candidateRow([name, candidate]) {
       { style: 'border-bottom: 1px solid #ccc; padding: 10px 0' },
       h(
         'div',
-        {},
-        h(
-          'div',
-          { style: 'display: flex; align-items: center; padding-right: .5rem' },
-          h('img', {
-            style:
-              'border-radius: 30px;object-fit: cover; margin-right: .5rem;',
-            width: '30',
-            height: '30',
-            src: candidate.photo,
-            alt: `Portrait of ${nameToHuman(name)}`,
-          }),
-          nameToHuman(name)
-        ),
-        candidate.suspended
-          ? h(
-              'p',
-              { style: 'margin: .25rem 0;font-size: .75em' },
-              'Suspended On:',
-              candidate.suspended
-            )
-          : null
-      )
+        { style: 'display: flex; align-items: center; padding-right: .5rem' },
+        h('img', {
+          style: 'border-radius: 30px;object-fit: cover; margin-right: .5rem;',
+          width: '30',
+          height: '30',
+          src: candidate.photo,
+          alt: `Portrait of ${nameToHuman(name)}`,
+        }),
+        nameToHuman(name)
+      ),
+      candidate.suspended
+        ? h(
+            'p',
+            { style: 'margin: .25rem 0;font-size: .75em' },
+            'Suspended On:',
+            candidate.suspended
+          )
+        : null
     ),
     h(
       'td',
