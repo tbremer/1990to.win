@@ -10,7 +10,7 @@
       { "state": "north-carolina", "count": 26 },
       { "state": "tennessee", "count": 15 },
       { "state": "texas", "count": 60 },
-      { "state": "utah", "count": 60 }
+      { "state": "utah", "count": 9 }
     ],
     "delegates": [
       { "count": 12, "state": "iowa" },
@@ -34,8 +34,7 @@
       { "state": "massachusetts", "count": 17 },
       { "state": "north-carolina", "count": 2 },
       { "state": "tennessee", "count": 1 },
-      { "state": "texas", "count": 1 },
-      { "state": "utah", "count": 1 }
+      { "state": "texas", "count": 1 }
     ],
     "delegates": [
       { "count": 8, "state": "iowa" },
@@ -57,7 +56,7 @@
       { "state": "north-carolina", "count": 56 },
       { "state": "tennessee", "count": 28 },
       { "state": "texas", "count": 70 },
-      { "state": "utah", "count": 70 }
+      { "state": "utah", "count": 1 }
     ],
     "delegates": [
       { "count": 6, "state": "iowa" },
@@ -81,7 +80,7 @@
       { "state": "north-carolina", "count": 1 },
       { "state": "tennessee", "count": 7 },
       { "state": "texas", "count": 4 },
-      { "state": "utah", "count": 4 }
+      { "state": "utah", "count": 2 }
     ],
     "delegates": [
       { "count": 0, "state": "iowa" },
