@@ -59,6 +59,10 @@
       {
         "state": "maine",
         "count": 6
+      },
+      {
+        "state": "tennessee",
+        "count": 10
       }
     ],
     "delegates": [
@@ -149,6 +153,10 @@
       {
         "state": "maine",
         "count": 6
+      },
+      {
+        "state": "tennessee",
+        "count": 20
       }
     ],
     "delegates": [
@@ -203,6 +211,10 @@
       {
         "state": "north-carolina",
         "count": 1
+      },
+      {
+        "state": "tennessee",
+        "count": 3
       }
     ],
     "delegates": [
