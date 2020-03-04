@@ -17,6 +17,7 @@ function doctype(tree) {
 }
 
 function render(tree) {
+  if (tree === null) return;
   if (Array.isArray(tree)) return tree.map(render);
   // console.log(tree);
   if (tree === undefined) return null;

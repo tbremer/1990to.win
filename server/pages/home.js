@@ -95,3 +95,5 @@ function home(context) {
 }
 
 module.exports = home;
+module.exports.nameToHuman = nameToHuman;
+module.exports.addDelegates = addDelegates;

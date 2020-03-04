@@ -11,4 +11,9 @@ const curl = pipe(
   filter(([req]) => req.url === '/')
 );
 
-module.exports = { homepage, curl, assets };
+const stats = pipe(
+  filter(([req]) => /curl\//.test(req.headers['user-agent']) === false),
+  filter(([req]) => req.url === '/stats')
+);
+
+module.exports = { homepage, curl, assets, stats };
