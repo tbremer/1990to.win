@@ -37,11 +37,19 @@
     "photo": "/assets/images/bernie-sanders.jpg",
     "projection": [
       {
-        "state": "virginia",
-        "count": 19
+        "state": "colorado",
+        "count": 18
       },
       {
-        "state": "vermont",
+        "state": "maine",
+        "count": 6
+      },
+      {
+        "state": "massachusetts",
+        "count": 21
+      },
+      {
+        "state": "minnesota",
         "count": 8
       },
       {
@@ -53,28 +61,20 @@
         "count": 5
       },
       {
-        "state": "massachusetts",
-        "count": 6
-      },
-      {
-        "state": "maine",
-        "count": 6
-      },
-      {
         "state": "tennessee",
         "count": 11
       },
       {
-        "state": "colorado",
-        "count": 18
+        "state": "texas",
+        "count": 16
       },
       {
-        "state": "minnesota",
+        "state": "vermont",
         "count": 8
       },
       {
-        "state": "texas",
-        "count": 1
+        "state": "virginia",
+        "count": 19
       }
     ],
     "delegates": [
@@ -121,7 +121,7 @@
     "projection": [
       {
         "state": "massachusetts",
-        "count": 4
+        "count": 9
       }
     ],
     "delegates": [
@@ -147,12 +147,20 @@
         "count": 32
       },
       {
-        "state": "virginia",
-        "count": 60
+        "state": "colorado",
+        "count": 5
       },
       {
-        "state": "vermont",
-        "count": 3
+        "state": "maine",
+        "count": 6
+      },
+      {
+        "state": "massachusetts",
+        "count": 29
+      },
+      {
+        "state": "minnesota",
+        "count": 14
       },
       {
         "state": "north-carolina",
@@ -163,28 +171,20 @@
         "count": 15
       },
       {
-        "state": "massachusetts",
-        "count": 6
-      },
-      {
-        "state": "maine",
-        "count": 6
-      },
-      {
         "state": "tennessee",
         "count": 21
       },
       {
-        "state": "colorado",
-        "count": 5
-      },
-      {
-        "state": "minnesota",
-        "count": 14
-      },
-      {
         "state": "texas",
-        "count": 1
+        "count": 16
+      },
+      {
+        "state": "vermont",
+        "count": 3
+      },
+      {
+        "state": "virginia",
+        "count": 60
       }
     ],
     "delegates": [
@@ -237,16 +237,16 @@
     "photo": "/assets/images/michael-bloomberg.jpg",
     "projection": [
       {
+        "state": "colorado",
+        "count": 7
+      },
+      {
         "state": "north-carolina",
         "count": 1
       },
       {
         "state": "tennessee",
         "count": 4
-      },
-      {
-        "state": "colorado",
-        "count": 7
       },
       {
         "state": "texas",
