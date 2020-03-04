@@ -150,7 +150,8 @@ a:visited {
 /* TABLE FOR STATS PAGE */
 table {
     border-collapse: collapse;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    /* margin-right: 140px; */
 }
 
 th {
@@ -178,8 +179,12 @@ td {
 
 td.projection {
     color: #28a0cb;
+    font-weight: 500;
 }
 
+tr.suspended {
+    opacity: 0.8;
+}
 tr.suspended p {
     margin: 0.25rem 0;
     font-size: 0.75em;
