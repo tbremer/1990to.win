@@ -196,6 +196,7 @@ tr.suspended p {
     left: 0;
     border-left-color: transparent;
     border-top-color: transparent;
+    white-space: nowrap;
 }
 
 .candidate-column div {
