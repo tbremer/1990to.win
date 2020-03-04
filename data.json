@@ -35,7 +35,16 @@
   },
   "bernie-sanders": {
     "photo": "/assets/images/bernie-sanders.jpg",
-    "projection": [],
+    "projection": [
+      {
+        "state": "virginia",
+        "count": 9
+      },
+      {
+        "state": "vermont",
+        "count": 8
+      }
+    ],
     "delegates": [
       {
         "count": 12,
@@ -95,7 +104,12 @@
   },
   "joe-biden": {
     "photo": "/assets/images/joe-biden.jpg",
-    "projection": [],
+    "projection": [
+      {
+        "state": "virginia",
+        "count": 41
+      }
+    ],
     "delegates": [
       {
         "count": 6,
