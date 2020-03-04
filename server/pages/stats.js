@@ -2,10 +2,6 @@ const h = require('../renderer/h');
 const { nameToHuman, addDelegates } = require('./home');
 const states = require('../../lib/states');
 
-console.log(states);
-
-console.log();
-
 function stats(context) {
   const entries = Object.entries(context);
   const active = entries.filter(([, { suspended }]) => !suspended);
@@ -31,7 +27,7 @@ function stats(context) {
 
   return h(
     'table',
-    { style: 'border-collapse: collapse; margin: 0 auto;' },
+    {},
     h('thead', {}, h('tr', {}, ...tableHead())),
     h('tbody', {}, ...data.map(candidateRow))
   );
@@ -46,25 +42,8 @@ function tableHead() {
   return header.map(cell =>
     h(
       'th',
-      {
-        style: 'height: 140px; white-space: nowrap;',
-      },
-      cell.length
-        ? h(
-            'div',
-            {
-              style:
-                'transform: translate(25px, 51px) rotate(315deg); width: 30px;',
-            },
-            h(
-              'span',
-              {
-                style: 'border-bottom: 1px solid #ccc; padding: 5px 10px;',
-              },
-              nameToHuman(cell)
-            )
-          )
-        : null
+      {},
+      cell.length ? h('div', {}, h('span', {}, nameToHuman(cell))) : null
     )
   );
 }
@@ -78,73 +57,40 @@ function candidateRow([name, candidate], idx) {
   return h(
     'tr',
     {
-      style: `${
-        candidate.suspended ? 'opacity: .66; filter: grayscale(1);' : ''
-      }${evenRowStyle}`,
+      class: candidate.suspended ? 'suspended' : '',
+      style: evenRowStyle,
     },
     h(
       'td',
       {
-        style: `border-bottom: 1px solid #ccc; padding: 10px; position: sticky; left: 0; ${evenRowStyle}`,
+        class: 'candidate-column',
+        style: `${evenRowStyle}`,
       },
       h(
         'div',
-        { style: 'display: flex; align-items: center' },
+        {},
         h('img', {
-          style: 'border-radius: 30px;object-fit: cover; margin-right: .5rem;',
-          width: '30',
-          height: '30',
           src: candidate.photo,
           alt: `Portrait of ${nameToHuman(name)}`,
         }),
         nameToHuman(name)
       ),
       candidate.suspended
-        ? h(
-            'p',
-            { style: 'margin: .25rem 0;font-size: .75em' },
-            'Suspended On:',
-            candidate.suspended
-          )
+        ? h('p', {}, 'Suspended On:', candidate.suspended)
         : null
     ),
-    h(
-      'td',
-      {
-        style:
-          'width: 30px; padding: 10px 5px; border: 1px solid #ccc;text-align:center;',
-      },
-      pledged
-    ),
-    h(
-      'td',
-      {
-        style: `width: 30px; padding: 10px 5px; border: 1px solid #ccc;text-align:center; ${
-          projection > 0 ? '' : 'opacity: .5;'
-        }`,
-      },
-      projection > 0 ? pledged + projection : '-'
-    ),
+    h('td', {}, pledged),
+    h('td', {}, projection > 0 ? pledged + projection : '-'),
     ...Array.from(states.keys()).map(state => {
       const info = states.get(state).candidates.find(i => i[0] === name);
-      if (info === undefined)
-        return h(
-          'td',
-          {
-            style:
-              'width: 30px; padding: 10px 5px; border: 1px solid #ccc;text-align:center;',
-          },
-          '–'
-        );
+      if (info === undefined) return h('td', {}, '–');
 
       const [, count, type] = info;
 
       return h(
         'td',
         {
-          style: `${
-            type === 'projection' ? 'color: #28A0CB;' : ''
-          }width: 30px; padding: 10px 5px; border: 1px solid #ccc;text-align:center;`,
+          class: type,
         },
         count
       );

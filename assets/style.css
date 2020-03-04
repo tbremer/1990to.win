@@ -35,7 +35,8 @@
 }
 
 *,
-*::before*::after {
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -125,4 +126,63 @@ body {
         max-width: 1100px;
         margin: 0 auto;
     }
+}
+
+/* TABLE FOR STATS PAGE */
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th {
+    height: 140px;
+    white-space: nowrap;
+}
+
+th > div {
+    transform: translate(37px, 46px) rotate(-45deg);
+    width: 50px;
+}
+
+th > div > span {
+    border-bottom: 1px solid #ccc;
+    padding-left: 0.5rem;
+    padding-right: 100%;
+}
+
+td {
+    min-width: 50px;
+    padding: 10px 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+td.projection {
+    color: #28a0cb;
+}
+
+tr.suspended p {
+    margin: 0.25rem 0;
+    font-size: 0.75em;
+}
+
+.candidate-column {
+    text-align: left;
+    position: sticky;
+    left: 0;
+    border-left-color: transparent;
+    border-top-color: transparent;
+}
+
+.candidate-column div {
+    display: flex;
+    align-items: center;
+}
+
+.candidate-column img {
+    border-radius: 30px;
+    object-fit: cover;
+    margin-right: 0.5rem;
+    width: 30px;
+    height: 30px;
 }
