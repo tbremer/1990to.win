@@ -38,7 +38,7 @@
     "projection": [
       {
         "state": "virginia",
-        "count": 13
+        "count": 15
       },
       {
         "state": "vermont",
@@ -47,6 +47,10 @@
       {
         "state": "north-carolina",
         "count": 11
+      },
+      {
+        "state": "oklahoma",
+        "count": 2
       }
     ],
     "delegates": [
@@ -120,6 +124,10 @@
       {
         "state": "north-carolina",
         "count": 41
+      },
+      {
+        "state": "oklahoma",
+        "count": 4
       }
     ],
     "delegates": [
