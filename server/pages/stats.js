@@ -1,5 +1,10 @@
 const h = require('../renderer/h');
 const { nameToHuman, addDelegates } = require('./home');
+const states = require('../../lib/states');
+
+console.log(states);
+
+console.log();
 
 function stats(context) {
   const entries = Object.entries(context);
@@ -24,8 +29,6 @@ function stats(context) {
 
   const data = active.concat(suspended);
 
-  // data.sort();
-
   return h(
     'table',
     { style: 'border-collapse: collapse;' },
@@ -37,7 +40,10 @@ function stats(context) {
 module.exports = stats;
 
 function tableHead() {
-  return ['', 'Total', 'With Projections'].map(cell =>
+  const header = ['', 'total', 'with-projections'].concat(
+    Array.from(states.keys())
+  );
+  return header.map(cell =>
     h(
       'th',
       {
@@ -55,7 +61,7 @@ function tableHead() {
               {
                 style: 'border-bottom: 1px solid #ccc; padding: 5px 10px;',
               },
-              cell
+              nameToHuman(cell)
             )
           )
         : null
@@ -76,7 +82,10 @@ function candidateRow([name, candidate]) {
     },
     h(
       'td',
-      { style: 'border-bottom: 1px solid #ccc; padding: 10px 0' },
+      {
+        style:
+          'border-bottom: 1px solid #ccc; padding: 10px 0; position: sticky; left: 0; background-color: #edeff0;',
+      },
       h(
         'div',
         { style: 'display: flex; align-items: center; padding-right: .5rem' },
@@ -114,6 +123,30 @@ function candidateRow([name, candidate]) {
         }`,
       },
       projection > 0 ? pledged + projection : '-'
-    )
+    ),
+    ...Array.from(states.keys()).map(state => {
+      const info = states.get(state).candidates.find(i => i[0] === name);
+      if (info === undefined)
+        return h(
+          'td',
+          {
+            style:
+              'width: 30px; padding: 10px 5px; border: 1px solid #ccc;text-align:center;',
+          },
+          '–'
+        );
+
+      const [, count, type] = info;
+
+      return h(
+        'td',
+        {
+          style: `${
+            type === 'projection' ? 'color: #28A0CB;' : ''
+          }width: 30px; padding: 10px 5px; border: 1px solid #ccc;text-align:center;`,
+        },
+        count
+      );
+    })
   );
 }
