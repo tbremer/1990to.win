@@ -14,11 +14,10 @@ function projections(arr) {
     h(
       'p',
       {
-        style:
-          'margin: .25rem 0; font-size: .95rem; color:#28A0CB; font-style:italic;',
+        style: 'margin: .25rem 0; color:#28A0CB; font-style:italic;',
       },
       nameToHuman(projection.state),
-      ' Projection:',
+      ':',
       projection.count
     )
   );
@@ -32,24 +31,51 @@ function candidate([name, data]) {
       data: JSON.stringify(data),
       name: name,
     },
-    h('img', {
-      class: 'candidate-image',
-      src: data.photo,
-      alt: `Portrant of ${nameToHuman(name)}.`,
-    }),
+    h(
+      'section',
+      {
+        class: 'candidate-basics',
+      },
+      h('img', {
+        class: 'candidate-image',
+        src: data.photo,
+        alt: `Portrant of ${nameToHuman(name)}.`,
+      }),
+      h('h2', { style: 'margin: 0; padding: 0;' }, nameToHuman(name))
+    ),
     h(
       'div',
       { class: 'candidate-meta' },
-      h('h2', { style: 'margin: 0; padding: 0;' }, nameToHuman(name)),
-      ...projections(data.projection || []),
       h(
         'p',
         {
-          style: 'margin: .25rem 0; font-size: 1.25rem; font-weight: 500;',
+          style: 'margin: .25rem 0 1rem; font-size: 1.25rem; font-weight: 500;',
         },
         'Delegate count:',
         data.delegates.reduce(addDelegates, 0)
       ),
+      'projection' in data && data.projection.length
+        ? h(
+            'section',
+            { open: 'open', style: 'font-size: .85rem' },
+            h(
+              'h3',
+              { style: 'cursor: default; font-weight: 500; margin: 0' },
+              'Projections'
+            ),
+            h(
+              'p',
+              {
+                style: 'margin: .25rem 0 .5rem',
+              },
+              'Count with Projections:',
+              data.delegates.reduce(addDelegates, 0) +
+                data.projection.reduce(addDelegates, 0)
+            ),
+            ...projections(data.projection || [])
+          )
+        : null,
+
       data.suspended &&
         h('p', { style: 'margin: 0;' }, 'Suspended on:', data.suspended)
     )

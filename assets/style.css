@@ -85,10 +85,14 @@ a:visited {
 }
 
 .candidate {
-    display: flex;
-    align-items: center;
     padding: 1rem;
     border-bottom: 1px solid #dcdee0;
+}
+
+.candidate-basics {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 .candidate:last-child {
