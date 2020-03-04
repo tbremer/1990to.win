@@ -68,7 +68,7 @@ function candidate([name, data]) {
               {
                 style: 'margin: .25rem 0 .5rem',
               },
-              'Count with Projections:',
+              'Delegates with projections:',
               data.delegates.reduce(addDelegates, 0) +
                 data.projection.reduce(addDelegates, 0)
             ),
