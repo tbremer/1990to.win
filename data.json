@@ -43,6 +43,10 @@
       {
         "state": "vermont",
         "count": 8
+      },
+      {
+        "state": "north-carolina",
+        "count": 11
       }
     ],
     "delegates": [
@@ -112,6 +116,10 @@
       {
         "state": "vermont",
         "count": 3
+      },
+      {
+        "state": "north-carolina",
+        "count": 41
       }
     ],
     "delegates": [
@@ -162,7 +170,12 @@
   },
   "michael-bloomberg": {
     "photo": "/assets/images/michael-bloomberg.jpg",
-    "projection": [],
+    "projection": [
+      {
+        "state": "north-carolina",
+        "count": 1
+      }
+    ],
     "delegates": [
       {
         "count": 0,
