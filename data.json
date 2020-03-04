@@ -54,7 +54,7 @@
       },
       {
         "state": "north-carolina",
-        "count": 11
+        "count": 20
       },
       {
         "state": "oklahoma",
@@ -66,11 +66,15 @@
       },
       {
         "state": "texas",
-        "count": 16
+        "count": 20
+      },
+      {
+        "state": "utah",
+        "count": 3
       },
       {
         "state": "vermont",
-        "count": 8
+        "count": 11
       },
       {
         "state": "virginia",
@@ -120,6 +124,10 @@
     "photo": "/assets/images/elizabeth-warren.jpg",
     "projection": [
       {
+        "state": "north-carolina",
+        "count": 1
+      },
+      {
         "state": "massachusetts",
         "count": 9
       }
@@ -164,7 +172,7 @@
       },
       {
         "state": "north-carolina",
-        "count": 41
+        "count": 48
       },
       {
         "state": "oklahoma",
@@ -176,11 +184,11 @@
       },
       {
         "state": "texas",
-        "count": 16
+        "count": 20
       },
       {
         "state": "vermont",
-        "count": 3
+        "count": 5
       },
       {
         "state": "virginia",
@@ -254,7 +262,7 @@
       },
       {
         "state": "texas",
-        "count": 1
+        "count": 2
       }
     ],
     "delegates": [
