@@ -69,26 +69,27 @@ function tableHead() {
   );
 }
 
-function candidateRow([name, candidate]) {
+function candidateRow([name, candidate], idx) {
   const pledged = candidate.delegates.reduce(addDelegates, 0);
   const projection = candidate.projection.reduce(addDelegates, 0);
+  const evenRowStyle =
+    idx % 2 === 0 ? 'background-color: #fff;' : 'background-color: #edeff0;';
 
   return h(
     'tr',
     {
       style: `${
-        candidate.suspended ? 'opacity: .5; filter: grayscale(1);' : ''
-      }`,
+        candidate.suspended ? 'opacity: .66; filter: grayscale(1);' : ''
+      }${evenRowStyle}`,
     },
     h(
       'td',
       {
-        style:
-          'border-bottom: 1px solid #ccc; padding: 10px 0; position: sticky; left: 0; background-color: #edeff0;',
+        style: `border-bottom: 1px solid #ccc; padding: 10px; position: sticky; left: 0; ${evenRowStyle}`,
       },
       h(
         'div',
-        { style: 'display: flex; align-items: center; padding-right: .5rem' },
+        { style: 'display: flex; align-items: center' },
         h('img', {
           style: 'border-radius: 30px;object-fit: cover; margin-right: .5rem;',
           width: '30',
