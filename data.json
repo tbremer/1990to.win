@@ -3,11 +3,10 @@
     "photo": "/assets/images/bernie-sanders.jpg",
     "projection": [
       { "state": "alabama", "count": 7 },
-      { "state": "california", "count": 72 },
+      { "state": "california", "count": 155 },
       { "state": "colorado", "count": 20 },
       { "state": "maine", "count": 8 },
-      { "state": "massachusetts", "count": 26 },
-      { "state": "north-carolina", "count": 26 },
+      { "state": "massachusetts", "count": 28 },
       { "state": "tennessee", "count": 15 },
       { "state": "texas", "count": 60 },
       { "state": "utah", "count": 9 }
@@ -20,6 +19,7 @@
 
       { "state": "arkansas", "count": 8 },
       { "state": "minnesota", "count": 26 },
+      { "state": "north-carolina", "count": 35 },
       { "state": "oklahoma", "count": 13 },
       { "state": "vermont", "count": 11 },
       { "state": "virginia", "count": 31 }
@@ -28,11 +28,10 @@
   "elizabeth-warren": {
     "photo": "/assets/images/elizabeth-warren.jpg",
     "projection": [
-      { "state": "california", "count": 7 },
+      { "state": "california", "count": 9 },
       { "state": "colorado", "count": 1 },
       { "state": "maine", "count": 2 },
-      { "state": "massachusetts", "count": 17 },
-      { "state": "north-carolina", "count": 2 },
+      { "state": "massachusetts", "count": 23 },
       { "state": "tennessee", "count": 1 },
       { "state": "texas", "count": 1 }
     ],
@@ -42,6 +41,7 @@
       { "count": 0, "state": "nevada" },
 
       { "state": "minnesota", "count": 10 },
+      { "state": "north-carolina", "count": 2 },
       { "state": "virginia", "count": 2 }
     ]
   },
@@ -49,11 +49,10 @@
     "photo": "/assets/images/joe-biden.jpg",
     "projection": [
       { "state": "alabama", "count": 40 },
-      { "state": "california", "count": 21 },
+      { "state": "california", "count": 93 },
       { "state": "colorado", "count": 9 },
       { "state": "maine", "count": 8 },
-      { "state": "massachusetts", "count": 34 },
-      { "state": "north-carolina", "count": 56 },
+      { "state": "massachusetts", "count": 36 },
       { "state": "tennessee", "count": 28 },
       { "state": "texas", "count": 70 },
       { "state": "utah", "count": 1 }
@@ -66,6 +65,7 @@
 
       { "state": "arkansas", "count": 16 },
       { "state": "minnesota", "count": 38 },
+      { "state": "north-carolina", "count": 65 },
       { "state": "oklahoma", "count": 21 },
       { "state": "vermont", "count": 5 },
       { "state": "virginia", "count": 66 }
@@ -75,7 +75,7 @@
     "photo": "/assets/images/michael-bloomberg.jpg",
     "projection": [
       { "state": "alabama", "count": 1 },
-      { "state": "california", "count": 8 },
+      { "state": "california", "count": 14 },
       { "state": "colorado", "count": 9 },
       { "state": "north-carolina", "count": 1 },
       { "state": "tennessee", "count": 7 },
