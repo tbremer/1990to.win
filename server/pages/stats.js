@@ -37,7 +37,7 @@ function stats(context) {
 module.exports = stats;
 
 function tableHead() {
-  return ['', 'Total', 'Total with Projections'].map(cell =>
+  return ['', 'Total', 'With Projections'].map(cell =>
     h(
       'th',
       {
