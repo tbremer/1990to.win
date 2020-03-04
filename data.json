@@ -2,17 +2,17 @@
   "bernie-sanders": {
     "photo": "/assets/images/bernie-sanders.jpg",
     "projection": [
-      { "state": "alabama", "count": 1 },
+      { "state": "alabama", "count": 7 },
       { "state": "arkansas", "count": 7 },
-      { "state": "california", "count": 33 },
+      { "state": "california", "count": 67 },
       { "state": "colorado", "count": 20 },
       { "state": "maine", "count": 8 },
-      { "state": "massachusetts", "count": 24 },
-      { "state": "minnesota", "count": 17 },
+      { "state": "massachusetts", "count": 26 },
+      { "state": "minnesota", "count": 20 },
       { "state": "north-carolina", "count": 26 },
       { "state": "oklahoma", "count": 13 },
       { "state": "tennessee", "count": 15 },
-      { "state": "texas", "count": 42 },
+      { "state": "texas", "count": 50 },
       { "state": "utah", "count": 8 },
       { "state": "vermont", "count": 11 },
       { "state": "virginia", "count": 19 }
@@ -27,9 +27,13 @@
   "elizabeth-warren": {
     "photo": "/assets/images/elizabeth-warren.jpg",
     "projection": [
+      { "state": "california", "count": 5 },
       { "state": "colorado", "count": 1 },
-      { "state": "massachusetts", "count": 14 },
-      { "state": "north-carolina", "count": 2 }
+      { "state": "maine", "count": 2 },
+      { "state": "massachusetts", "count": 17 },
+      { "state": "minnesota", "count": 7 },
+      { "state": "north-carolina", "count": 2 },
+      { "state": "tennessee", "count": 1 }
     ],
     "delegates": [
       { "count": 8, "state": "iowa" },
@@ -40,17 +44,17 @@
   "joe-biden": {
     "photo": "/assets/images/joe-biden.jpg",
     "projection": [
-      { "state": "alabama", "count": 32 },
-      { "state": "arkansas", "count": 15 },
+      { "state": "alabama", "count": 40 },
+      { "state": "arkansas", "count": 18 },
       { "state": "california", "count": 1 },
       { "state": "colorado", "count": 7 },
       { "state": "maine", "count": 8 },
-      { "state": "massachusetts", "count": 33 },
-      { "state": "minnesota", "count": 26 },
+      { "state": "massachusetts", "count": 34 },
+      { "state": "minnesota", "count": 30 },
       { "state": "north-carolina", "count": 56 },
       { "state": "oklahoma", "count": 21 },
       { "state": "tennessee", "count": 28 },
-      { "state": "texas", "count": 42 },
+      { "state": "texas", "count": 51 },
       { "state": "vermont", "count": 5 },
       { "state": "virginia", "count": 60 }
     ],
@@ -66,12 +70,12 @@
     "projection": [
       { "state": "alabama", "count": 1 },
       { "state": "american-samoa", "count": 4 },
-      { "state": "california", "count": 2 },
+      { "state": "california", "count": 8 },
       { "state": "colorado", "count": 8 },
       { "state": "north-carolina", "count": 1 },
       { "state": "oklahoma", "count": 3 },
       { "state": "tennessee", "count": 7 },
-      { "state": "texas", "count": 3 },
+      { "state": "texas", "count": 4 },
       { "state": "utah", "count": 2 }
     ],
     "delegates": [
