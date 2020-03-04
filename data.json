@@ -3,18 +3,9 @@
     "photo": "/assets/images/amy-klobuchar.jpg",
     "projection": [],
     "delegates": [
-      {
-        "count": 1,
-        "state": "iowa"
-      },
-      {
-        "count": 6,
-        "state": "new-hampshire"
-      },
-      {
-        "count": 0,
-        "state": "nevada"
-      }
+      { "count": 1, "state": "iowa" },
+      { "count": 6, "state": "new-hampshire" },
+      { "count": 0, "state": "nevada" }
     ],
     "suspended": "03/02/2020"
   },
@@ -22,280 +13,118 @@
     "photo": "/assets/images/andrew-yang.jpg",
     "projection": [],
     "delegates": [
-      {
-        "count": 0,
-        "state": "iowa"
-      },
-      {
-        "count": 0,
-        "state": "new-hampshire"
-      }
+      { "count": 0, "state": "iowa" },
+      { "count": 0, "state": "new-hampshire" }
     ],
     "suspended": "02/11/2020"
   },
   "bernie-sanders": {
     "photo": "/assets/images/bernie-sanders.jpg",
     "projection": [
-      {
-        "state": "colorado",
-        "count": 18
-      },
-      {
-        "state": "maine",
-        "count": 6
-      },
-      {
-        "state": "massachusetts",
-        "count": 21
-      },
-      {
-        "state": "minnesota",
-        "count": 8
-      },
-      {
-        "state": "north-carolina",
-        "count": 20
-      },
-      {
-        "state": "oklahoma",
-        "count": 5
-      },
-      {
-        "state": "tennessee",
-        "count": 11
-      },
-      {
-        "state": "texas",
-        "count": 20
-      },
-      {
-        "state": "utah",
-        "count": 3
-      },
-      {
-        "state": "vermont",
-        "count": 11
-      },
-      {
-        "state": "virginia",
-        "count": 19
-      }
+      { "state": "alabama", "count": 1 },
+      { "state": "colorado", "count": 20 },
+      { "state": "maine", "count": 7 },
+      { "state": "massachusetts", "count": 22 },
+      { "state": "minnesota", "count": 8 },
+      { "state": "north-carolina", "count": 20 },
+      { "state": "oklahoma", "count": 10 },
+      { "state": "tennessee", "count": 11 },
+      { "state": "texas", "count": 23 },
+      { "state": "utah", "count": 6 },
+      { "state": "vermont", "count": 11 },
+      { "state": "virginia", "count": 19 }
     ],
     "delegates": [
-      {
-        "count": 12,
-        "state": "iowa"
-      },
-      {
-        "count": 9,
-        "state": "new-hampshire"
-      },
-      {
-        "count": 24,
-        "state": "nevada"
-      },
-
-      {
-        "state": "south-carolina",
-        "count": 15
-      }
+      { "count": 12, "state": "iowa" },
+      { "count": 9, "state": "new-hampshire" },
+      { "count": 24, "state": "nevada" },
+      { "count": 15, "state": "south-carolina" }
     ]
   },
   "deval-patrick": {
     "photo": "/assets/images/deval-patrick.jpg",
     "projection": [],
     "delegates": [
-      {
-        "count": 0,
-        "state": "iowa"
-      },
-      {
-        "count": 0,
-        "state": "new-hampshire"
-      },
-      {
-        "count": 0,
-        "state": "nevada"
-      }
+      { "count": 0, "state": "iowa" },
+      { "count": 0, "state": "new-hampshire" },
+      { "count": 0, "state": "nevada" }
     ],
     "suspended": "02/12/2020"
   },
   "elizabeth-warren": {
     "photo": "/assets/images/elizabeth-warren.jpg",
     "projection": [
-      {
-        "state": "north-carolina",
-        "count": 1
-      },
-      {
-        "state": "massachusetts",
-        "count": 9
-      }
+      { "state": "colorado", "count": 1 },
+      { "state": "north-carolina", "count": 1 },
+      { "state": "massachusetts", "count": 10 }
     ],
     "delegates": [
-      {
-        "count": 8,
-        "state": "iowa"
-      },
-      {
-        "count": 0,
-        "state": "new-hampshire"
-      },
-      {
-        "count": 0,
-        "state": "nevada"
-      }
+      { "count": 8, "state": "iowa" },
+      { "count": 0, "state": "new-hampshire" },
+      { "count": 0, "state": "nevada" }
     ]
   },
   "joe-biden": {
     "photo": "/assets/images/joe-biden.jpg",
     "projection": [
-      {
-        "state": "alabama",
-        "count": 32
-      },
-      {
-        "state": "colorado",
-        "count": 5
-      },
-      {
-        "state": "maine",
-        "count": 6
-      },
-      {
-        "state": "massachusetts",
-        "count": 29
-      },
-      {
-        "state": "minnesota",
-        "count": 14
-      },
-      {
-        "state": "north-carolina",
-        "count": 48
-      },
-      {
-        "state": "oklahoma",
-        "count": 15
-      },
-      {
-        "state": "tennessee",
-        "count": 21
-      },
-      {
-        "state": "texas",
-        "count": 20
-      },
-      {
-        "state": "vermont",
-        "count": 5
-      },
-      {
-        "state": "virginia",
-        "count": 60
-      }
+      { "state": "alabama", "count": 32 },
+      { "state": "colorado", "count": 7 },
+      { "state": "maine", "count": 7 },
+      { "state": "massachusetts", "count": 31 },
+      { "state": "minnesota", "count": 14 },
+      { "state": "north-carolina", "count": 48 },
+      { "state": "oklahoma", "count": 19 },
+      { "state": "tennessee", "count": 21 },
+      { "state": "texas", "count": 22 },
+      { "state": "vermont", "count": 5 },
+      { "state": "virginia", "count": 60 }
     ],
     "delegates": [
-      {
-        "count": 6,
-        "state": "iowa"
-      },
-      {
-        "count": 0,
-        "state": "new-hampshire"
-      },
-      {
-        "count": 9,
-        "state": "nevada"
-      },
-
-      {
-        "state": "south-carolina",
-        "count": 39
-      }
+      { "count": 6, "state": "iowa" },
+      { "count": 0, "state": "new-hampshire" },
+      { "count": 9, "state": "nevada" },
+      { "count": 39, "state": "south-carolina" }
     ]
   },
   "john-delaney": {
     "photo": "/assets/images/john-delaney.jpg",
     "projection": [],
-    "delegates": [
-      {
-        "count": 0,
-        "state": "iowa"
-      }
-    ],
+    "delegates": [{ "count": 0, "state": "iowa" }],
     "suspended": "01/31/2020"
   },
   "michael-bennet": {
     "photo": "/assets/images/michael-bennet.jpg",
     "projection": [],
     "delegates": [
-      {
-        "count": 0,
-        "state": "iowa"
-      },
-      {
-        "count": 0,
-        "state": "new-hampshire"
-      }
+      { "count": 0, "state": "iowa" },
+      { "count": 0, "state": "new-hampshire" }
     ],
     "suspended": "02/11/2020"
   },
   "michael-bloomberg": {
     "photo": "/assets/images/michael-bloomberg.jpg",
     "projection": [
-      {
-        "state": "american-samoa",
-        "count": 4
-      },
-      {
-        "state": "colorado",
-        "count": 7
-      },
-      {
-        "state": "north-carolina",
-        "count": 1
-      },
-      {
-        "state": "tennessee",
-        "count": 4
-      },
-      {
-        "state": "texas",
-        "count": 2
-      }
+      { "state": "alabama", "count": 1 },
+      { "state": "american-samoa", "count": 4 },
+      { "state": "colorado", "count": 8 },
+      { "state": "north-carolina", "count": 1 },
+      { "state": "oklahoma", "count": 2 },
+      { "state": "tennessee", "count": 4 },
+      { "state": "texas", "count": 2 }
     ],
     "delegates": [
-      {
-        "count": 0,
-        "state": "iowa"
-      },
-      {
-        "count": 0,
-        "state": "new-hampshire"
-      },
-      {
-        "count": 0,
-        "state": "nevada"
-      }
+      { "count": 0, "state": "iowa" },
+      { "count": 0, "state": "new-hampshire" },
+      { "count": 0, "state": "nevada" }
     ]
   },
   "pete-buttigieg": {
     "photo": "/assets/images/pete-buttigieg.jpg",
     "projection": [],
     "delegates": [
-      {
-        "count": 13,
-        "state": "iowa"
-      },
-      {
-        "count": 9,
-        "state": "new-hampshire"
-      },
-      {
-        "count": 3,
-        "state": "nevada"
-      }
+      { "count": 13, "state": "iowa" },
+      { "count": 9, "state": "new-hampshire" },
+      { "count": 3, "state": "nevada" }
     ],
     "suspended": "03/01/2020"
   },
@@ -303,42 +132,19 @@
     "photo": "/assets/images/tom-steyer.jpg",
     "projection": [],
     "delegates": [
-      {
-        "count": 0,
-        "state": "iowa"
-      },
-      {
-        "count": 0,
-        "state": "new-hampshire"
-      },
-      {
-        "count": 0,
-        "state": "nevada"
-      }
+      { "count": 0, "state": "iowa" },
+      { "count": 0, "state": "new-hampshire" },
+      { "count": 0, "state": "nevada" }
     ],
     "suspended": "02/29/2020"
   },
   "tulsi-gabbard": {
     "photo": "/assets/images/tulsi-gabbard.jpg",
-    "projection": [
-      {
-        "state": "american-samoa",
-        "count": 1
-      }
-    ],
+    "projection": [{ "state": "american-samoa", "count": 1 }],
     "delegates": [
-      {
-        "count": 0,
-        "state": "iowa"
-      },
-      {
-        "count": 0,
-        "state": "new-hampshire"
-      },
-      {
-        "count": 0,
-        "state": "nevada"
-      }
+      { "count": 0, "state": "iowa" },
+      { "count": 0, "state": "new-hampshire" },
+      { "count": 0, "state": "nevada" }
     ]
   }
 }
