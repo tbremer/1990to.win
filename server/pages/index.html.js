@@ -86,12 +86,25 @@ module.exports = function(component, { context, url, jsBundle }) {
         'body',
         null,
         h(
-          'div',
+          'header',
           {
             style:
               'width: 100%; max-width: 468px; margin: 1rem auto 2rem; text-align: center;',
           },
           logo()
+        ),
+        h(
+          'nav',
+          {
+            style: `text-align: center; margin: ${
+              url === '/' ? '2rem' : '1rem'
+            } 0;`,
+          },
+          h(
+            'a',
+            { href: url === '/' ? '/stats' : '/' },
+            url === '/' ? '📈 Stats View' : '🏡 Home'
+          )
         ),
         typeof component === 'function' ? component(context) : component
       )

@@ -51,6 +51,25 @@ body {
     padding: 1rem;
 }
 
+a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #33678e;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #2d4262;
+}
+
+a:active {
+    color: #28a0cb;
+}
+
+a:visited {
+    color: #33678e;
+}
+
 .page-title {
     font-family: BarlowCondensed;
     font-weight: 500;
