@@ -38,7 +38,7 @@
     "projection": [
       {
         "state": "virginia",
-        "count": 18
+        "count": 19
       },
       {
         "state": "vermont",
@@ -51,6 +51,14 @@
       {
         "state": "oklahoma",
         "count": 2
+      },
+      {
+        "state": "massachusetts",
+        "count": 6
+      },
+      {
+        "state": "maine",
+        "count": 6
       }
     ],
     "delegates": [
@@ -94,7 +102,12 @@
   },
   "elizabeth-warren": {
     "photo": "/assets/images/elizabeth-warren.jpg",
-    "projection": [],
+    "projection": [
+      {
+        "state": "massachusetts",
+        "count": 4
+      }
+    ],
     "delegates": [
       {
         "count": 8,
@@ -128,6 +141,14 @@
       {
         "state": "oklahoma",
         "count": 4
+      },
+      {
+        "state": "massachusetts",
+        "count": 6
+      },
+      {
+        "state": "maine",
+        "count": 6
       }
     ],
     "delegates": [
