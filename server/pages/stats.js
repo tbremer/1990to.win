@@ -31,7 +31,7 @@ function stats(context) {
 
   return h(
     'table',
-    { style: 'border-collapse: collapse;' },
+    { style: 'border-collapse: collapse; margin: 0 auto;' },
     h('thead', {}, h('tr', {}, ...tableHead())),
     h('tbody', {}, ...data.map(candidateRow))
   );
