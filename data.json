@@ -42,7 +42,7 @@
       },
       {
         "state": "vermont",
-        "count": 8
+        "count": 7
       }
     ],
     "delegates": [
@@ -108,6 +108,10 @@
       {
         "state": "virginia",
         "count": 56
+      },
+      {
+        "state": "vermont",
+        "count": 3
       }
     ],
     "delegates": [
