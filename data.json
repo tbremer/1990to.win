@@ -22,15 +22,16 @@
     "photo": "/assets/images/bernie-sanders.jpg",
     "projection": [
       { "state": "alabama", "count": 1 },
+      { "state": "arkansas", "count": 7 },
       { "state": "colorado", "count": 20 },
       { "state": "maine", "count": 7 },
       { "state": "massachusetts", "count": 22 },
       { "state": "minnesota", "count": 8 },
-      { "state": "north-carolina", "count": 20 },
-      { "state": "oklahoma", "count": 10 },
-      { "state": "tennessee", "count": 11 },
+      { "state": "north-carolina", "count": 25 },
+      { "state": "oklahoma", "count": 13 },
+      { "state": "tennessee", "count": 14 },
       { "state": "texas", "count": 23 },
-      { "state": "utah", "count": 6 },
+      { "state": "utah", "count": 8 },
       { "state": "vermont", "count": 11 },
       { "state": "virginia", "count": 19 }
     ],
@@ -55,8 +56,8 @@
     "photo": "/assets/images/elizabeth-warren.jpg",
     "projection": [
       { "state": "colorado", "count": 1 },
-      { "state": "north-carolina", "count": 1 },
-      { "state": "massachusetts", "count": 10 }
+      { "state": "massachusetts", "count": 10 },
+      { "state": "north-carolina", "count": 2 }
     ],
     "delegates": [
       { "count": 8, "state": "iowa" },
@@ -68,13 +69,14 @@
     "photo": "/assets/images/joe-biden.jpg",
     "projection": [
       { "state": "alabama", "count": 32 },
+      { "state": "arkansas", "count": 14 },
       { "state": "colorado", "count": 7 },
       { "state": "maine", "count": 7 },
       { "state": "massachusetts", "count": 31 },
       { "state": "minnesota", "count": 14 },
-      { "state": "north-carolina", "count": 48 },
-      { "state": "oklahoma", "count": 19 },
-      { "state": "tennessee", "count": 21 },
+      { "state": "north-carolina", "count": 56 },
+      { "state": "oklahoma", "count": 21 },
+      { "state": "tennessee", "count": 28 },
       { "state": "texas", "count": 22 },
       { "state": "vermont", "count": 5 },
       { "state": "virginia", "count": 60 }
@@ -108,9 +110,10 @@
       { "state": "american-samoa", "count": 4 },
       { "state": "colorado", "count": 8 },
       { "state": "north-carolina", "count": 1 },
-      { "state": "oklahoma", "count": 2 },
-      { "state": "tennessee", "count": 4 },
-      { "state": "texas", "count": 2 }
+      { "state": "oklahoma", "count": 3 },
+      { "state": "tennessee", "count": 5 },
+      { "state": "texas", "count": 2 },
+      { "state": "utah", "count": 2 }
     ],
     "delegates": [
       { "count": 0, "state": "iowa" },
