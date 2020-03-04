@@ -50,7 +50,7 @@
       },
       {
         "state": "oklahoma",
-        "count": 2
+        "count": 5
       },
       {
         "state": "massachusetts",
@@ -62,7 +62,19 @@
       },
       {
         "state": "tennessee",
-        "count": 10
+        "count": 11
+      },
+      {
+        "state": "colorado",
+        "count": 18
+      },
+      {
+        "state": "minnesota",
+        "count": 8
+      },
+      {
+        "state": "texas",
+        "count": 1
       }
     ],
     "delegates": [
@@ -131,6 +143,10 @@
     "photo": "/assets/images/joe-biden.jpg",
     "projection": [
       {
+        "state": "alabama",
+        "count": 32
+      },
+      {
         "state": "virginia",
         "count": 60
       },
@@ -144,7 +160,7 @@
       },
       {
         "state": "oklahoma",
-        "count": 4
+        "count": 15
       },
       {
         "state": "massachusetts",
@@ -156,7 +172,19 @@
       },
       {
         "state": "tennessee",
-        "count": 20
+        "count": 21
+      },
+      {
+        "state": "colorado",
+        "count": 5
+      },
+      {
+        "state": "minnesota",
+        "count": 14
+      },
+      {
+        "state": "texas",
+        "count": 1
       }
     ],
     "delegates": [
@@ -214,7 +242,15 @@
       },
       {
         "state": "tennessee",
-        "count": 3
+        "count": 4
+      },
+      {
+        "state": "colorado",
+        "count": 7
+      },
+      {
+        "state": "texas",
+        "count": 1
       }
     ],
     "delegates": [
