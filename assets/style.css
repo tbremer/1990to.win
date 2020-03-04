@@ -154,13 +154,18 @@ a:visited {
 /* TABLE FOR STATS PAGE */
 table {
     border-collapse: collapse;
-    /* margin: 0 auto; */
-    /* margin-right: 140px; */
 }
 
 th {
     height: 140px;
     white-space: nowrap;
+}
+
+th:first-child {
+    position: sticky;
+    left: 0;
+    background-color: #edeff0;
+    z-index: 1;
 }
 
 th > div {
@@ -201,6 +206,7 @@ tr.suspended p {
     border-left-color: transparent;
     border-top-color: transparent;
     white-space: nowrap;
+    z-index: 1;
 }
 
 .candidate-column div {
