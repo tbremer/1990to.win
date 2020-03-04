@@ -237,6 +237,10 @@
     "photo": "/assets/images/michael-bloomberg.jpg",
     "projection": [
       {
+        "state": "american-samoa",
+        "count": 4
+      },
+      {
         "state": "colorado",
         "count": 7
       },
@@ -308,7 +312,12 @@
   },
   "tulsi-gabbard": {
     "photo": "/assets/images/tulsi-gabbard.jpg",
-    "projection": [],
+    "projection": [
+      {
+        "state": "american-samoa",
+        "count": 4
+      }
+    ],
     "delegates": [
       {
         "count": 0,
