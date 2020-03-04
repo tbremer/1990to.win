@@ -3,94 +3,105 @@
     "photo": "/assets/images/bernie-sanders.jpg",
     "projection": [
       { "state": "alabama", "count": 7 },
-      { "state": "arkansas", "count": 7 },
-      { "state": "california", "count": 67 },
+      { "state": "california", "count": 72 },
       { "state": "colorado", "count": 20 },
       { "state": "maine", "count": 8 },
       { "state": "massachusetts", "count": 26 },
-      { "state": "minnesota", "count": 20 },
       { "state": "north-carolina", "count": 26 },
-      { "state": "oklahoma", "count": 13 },
       { "state": "tennessee", "count": 15 },
-      { "state": "texas", "count": 50 },
-      { "state": "utah", "count": 8 },
-      { "state": "vermont", "count": 11 },
-      { "state": "virginia", "count": 19 }
+      { "state": "texas", "count": 60 },
+      { "state": "utah", "count": 60 }
     ],
     "delegates": [
       { "count": 12, "state": "iowa" },
       { "count": 9, "state": "new-hampshire" },
       { "count": 24, "state": "nevada" },
-      { "count": 15, "state": "south-carolina" }
+      { "count": 15, "state": "south-carolina" },
+
+      { "state": "arkansas", "count": 8 },
+      { "state": "minnesota", "count": 26 },
+      { "state": "oklahoma", "count": 13 },
+      { "state": "vermont", "count": 11 },
+      { "state": "virginia", "count": 31 }
     ]
   },
   "elizabeth-warren": {
     "photo": "/assets/images/elizabeth-warren.jpg",
     "projection": [
-      { "state": "california", "count": 5 },
+      { "state": "california", "count": 7 },
       { "state": "colorado", "count": 1 },
       { "state": "maine", "count": 2 },
       { "state": "massachusetts", "count": 17 },
-      { "state": "minnesota", "count": 7 },
       { "state": "north-carolina", "count": 2 },
-      { "state": "tennessee", "count": 1 }
+      { "state": "tennessee", "count": 1 },
+      { "state": "texas", "count": 1 },
+      { "state": "utah", "count": 1 }
     ],
     "delegates": [
       { "count": 8, "state": "iowa" },
       { "count": 0, "state": "new-hampshire" },
-      { "count": 0, "state": "nevada" }
+      { "count": 0, "state": "nevada" },
+
+      { "state": "minnesota", "count": 10 },
+      { "state": "virginia", "count": 2 }
     ]
   },
   "joe-biden": {
     "photo": "/assets/images/joe-biden.jpg",
     "projection": [
       { "state": "alabama", "count": 40 },
-      { "state": "arkansas", "count": 18 },
-      { "state": "california", "count": 1 },
-      { "state": "colorado", "count": 7 },
+      { "state": "california", "count": 21 },
+      { "state": "colorado", "count": 9 },
       { "state": "maine", "count": 8 },
       { "state": "massachusetts", "count": 34 },
-      { "state": "minnesota", "count": 30 },
       { "state": "north-carolina", "count": 56 },
-      { "state": "oklahoma", "count": 21 },
       { "state": "tennessee", "count": 28 },
-      { "state": "texas", "count": 51 },
-      { "state": "vermont", "count": 5 },
-      { "state": "virginia", "count": 60 }
+      { "state": "texas", "count": 70 },
+      { "state": "utah", "count": 70 }
     ],
     "delegates": [
       { "count": 6, "state": "iowa" },
       { "count": 0, "state": "new-hampshire" },
       { "count": 9, "state": "nevada" },
-      { "count": 39, "state": "south-carolina" }
+      { "count": 39, "state": "south-carolina" },
+
+      { "state": "arkansas", "count": 16 },
+      { "state": "minnesota", "count": 38 },
+      { "state": "oklahoma", "count": 21 },
+      { "state": "vermont", "count": 5 },
+      { "state": "virginia", "count": 66 }
     ]
   },
   "michael-bloomberg": {
     "photo": "/assets/images/michael-bloomberg.jpg",
     "projection": [
       { "state": "alabama", "count": 1 },
-      { "state": "american-samoa", "count": 4 },
       { "state": "california", "count": 8 },
-      { "state": "colorado", "count": 8 },
+      { "state": "colorado", "count": 9 },
       { "state": "north-carolina", "count": 1 },
-      { "state": "oklahoma", "count": 3 },
       { "state": "tennessee", "count": 7 },
       { "state": "texas", "count": 4 },
-      { "state": "utah", "count": 2 }
+      { "state": "utah", "count": 4 }
     ],
     "delegates": [
       { "count": 0, "state": "iowa" },
       { "count": 0, "state": "new-hampshire" },
-      { "count": 0, "state": "nevada" }
-    ]
+      { "count": 0, "state": "nevada" },
+      { "state": "american-samoa", "count": 4 },
+      { "state": "arkansas", "count": 4 },
+      { "state": "oklahoma", "count": 3 }
+    ],
+    "suspended": "03/04/2020"
   },
   "tulsi-gabbard": {
     "photo": "/assets/images/tulsi-gabbard.jpg",
-    "projection": [{ "state": "american-samoa", "count": 1 }],
+    "projection": [],
     "delegates": [
       { "count": 0, "state": "iowa" },
       { "count": 0, "state": "new-hampshire" },
-      { "count": 0, "state": "nevada" }
+      { "count": 0, "state": "nevada" },
+
+      { "state": "american-samoa", "count": 1 }
     ]
   },
 
