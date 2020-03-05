@@ -43,7 +43,7 @@
       { "state": "tennessee", "count": 1 },
       { "state": "texas", "count": 1 },
       { "state": "virginia", "count": 2 }
-    ]
+    ],"suspended":"03/05/2020"
   },
   "joe-biden": {
     "photo": "/assets/images/joe-biden.jpg",
