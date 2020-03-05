@@ -2,13 +2,10 @@
   "bernie-sanders": {
     "photo": "/assets/images/bernie-sanders.jpg",
     "projection": [
-      { "state": "alabama", "count": 7 },
       { "state": "california", "count": 155 },
       { "state": "colorado", "count": 20 },
-      { "state": "maine", "count": 8 },
-      { "state": "massachusetts", "count": 28 },
-      { "state": "tennessee", "count": 15 },
-      { "state": "texas", "count": 60 },
+      { "state": "maine", "count": 9 },
+      { "state": "massachusetts", "count": 29 },
       { "state": "utah", "count": 9 }
     ],
     "delegates": [
@@ -17,10 +14,13 @@
       { "count": 24, "state": "nevada" },
       { "count": 15, "state": "south-carolina" },
 
-      { "state": "arkansas", "count": 8 },
+      { "state": "alabama", "count": 7 },
+      { "state": "arkansas", "count": 9 },
       { "state": "minnesota", "count": 26 },
       { "state": "north-carolina", "count": 35 },
       { "state": "oklahoma", "count": 13 },
+      { "state": "tennessee", "count": 15 },
+      { "state": "texas", "count": 72 },
       { "state": "vermont", "count": 11 },
       { "state": "virginia", "count": 31 }
     ]
@@ -30,10 +30,8 @@
     "projection": [
       { "state": "california", "count": 9 },
       { "state": "colorado", "count": 1 },
-      { "state": "maine", "count": 2 },
-      { "state": "massachusetts", "count": 23 },
-      { "state": "tennessee", "count": 1 },
-      { "state": "texas", "count": 1 }
+      { "state": "maine", "count": 4 },
+      { "state": "massachusetts", "count": 23 }
     ],
     "delegates": [
       { "count": 8, "state": "iowa" },
@@ -42,19 +40,18 @@
 
       { "state": "minnesota", "count": 10 },
       { "state": "north-carolina", "count": 2 },
+      { "state": "tennessee", "count": 1 },
+      { "state": "texas", "count": 1 },
       { "state": "virginia", "count": 2 }
     ]
   },
   "joe-biden": {
     "photo": "/assets/images/joe-biden.jpg",
     "projection": [
-      { "state": "alabama", "count": 40 },
       { "state": "california", "count": 93 },
       { "state": "colorado", "count": 9 },
-      { "state": "maine", "count": 8 },
+      { "state": "maine", "count": 11 },
       { "state": "massachusetts", "count": 36 },
-      { "state": "tennessee", "count": 28 },
-      { "state": "texas", "count": 70 },
       { "state": "utah", "count": 1 }
     ],
     "delegates": [
@@ -63,10 +60,13 @@
       { "count": 9, "state": "nevada" },
       { "count": 39, "state": "south-carolina" },
 
-      { "state": "arkansas", "count": 16 },
+      { "state": "alabama", "count": 40 },
+      { "state": "arkansas", "count": 17 },
       { "state": "minnesota", "count": 38 },
       { "state": "north-carolina", "count": 65 },
       { "state": "oklahoma", "count": 21 },
+      { "state": "tennessee", "count": 29 },
+      { "state": "texas", "count": 81 },
       { "state": "vermont", "count": 5 },
       { "state": "virginia", "count": 66 }
     ]
@@ -74,21 +74,22 @@
   "michael-bloomberg": {
     "photo": "/assets/images/michael-bloomberg.jpg",
     "projection": [
-      { "state": "alabama", "count": 1 },
       { "state": "california", "count": 14 },
       { "state": "colorado", "count": 9 },
-      { "state": "north-carolina", "count": 1 },
-      { "state": "tennessee", "count": 7 },
-      { "state": "texas", "count": 4 },
       { "state": "utah", "count": 2 }
     ],
     "delegates": [
       { "count": 0, "state": "iowa" },
       { "count": 0, "state": "new-hampshire" },
       { "count": 0, "state": "nevada" },
+
+      { "state": "alabama", "count": 1 },
       { "state": "american-samoa", "count": 4 },
-      { "state": "arkansas", "count": 4 },
-      { "state": "oklahoma", "count": 3 }
+      { "state": "arkansas", "count": 5 },
+      { "state": "north-carolina", "count": 1 },
+      { "state": "oklahoma", "count": 3 },
+      { "state": "tennessee", "count": 8 },
+      { "state": "texas", "count": 5 }
     ],
     "suspended": "03/04/2020"
   },
