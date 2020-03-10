@@ -16,9 +16,9 @@ function projections(arr) {
       {
         style: 'margin: .25rem 0; color:#28A0CB; font-style:italic;',
       },
-      nameToHuman(projection.state),
-      ':',
-      projection.count
+      `${nameToHuman(projection.state)}: ${projection.count} (${
+        projection.percent
+      }%)`
     )
   );
 }
