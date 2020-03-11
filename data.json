@@ -6,7 +6,12 @@
       { "state": "colorado", "count": 20, "percent": 89 },
       { "state": "maine", "count": 9, "percent": 98 },
       { "state": "massachusetts", "count": 29, "percent": 99 },
-      { "state": "utah", "count": 13, "percent": 78 }
+      { "state": "utah", "count": 13, "percent": 78 },
+      { "state": "idaho", "count": 5, "percent": 34 },
+      { "state": "michigan", "count": 34, "percent": 80 },
+      { "state": "mississippi", "count": 2, "percent": 81 },
+      { "state": "north-dakota", "count": 5, "percent": 17},
+      { "state": "washington", "count": 17, "percent": 67}
     ],
     "delegates": [
       { "count": 12, "state": "iowa" },
@@ -22,7 +27,9 @@
       { "state": "tennessee", "count": 19 },
       { "state": "texas", "count": 102 },
       { "state": "vermont", "count": 11 },
-      { "state": "virginia", "count": 31 }
+      { "state": "virginia", "count": 31 },
+      
+      { "state": "missouri", "count": 21}
     ]
   },
   "joe-biden": {
@@ -32,7 +39,12 @@
       { "state": "colorado", "count": 12, "percent": 89 },
       { "state": "maine", "count": 11, "percent": 98 },
       { "state": "massachusetts", "count": 37, "percent": 99 },
-      { "state": "utah", "count": 4, "percent": 78 }
+      { "state": "utah", "count": 4, "percent": 78 },
+      { "state": "idaho", "count": 8, "percent": 34 },
+      { "state": "michigan", "count": 51, "percent": 80 },
+      { "state": "mississippi", "count": 29, "percent": 81 },
+      { "state": "north-dakota", "count": 5, "percent": 17},
+      { "state": "washington", "count": 17, "percent": 67}
     ],
     "delegates": [
       { "count": 6, "state": "iowa" },
@@ -48,7 +60,9 @@
       { "state": "tennessee", "count": 33 },
       { "state": "texas", "count": 111 },
       { "state": "vermont", "count": 5 },
-      { "state": "virginia", "count": 66 }
+      { "state": "virginia", "count": 66 },
+
+      { "state": "missouri", "count": 36}
     ]
   },
   "tulsi-gabbard": {
