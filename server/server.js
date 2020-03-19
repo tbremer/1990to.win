@@ -6,7 +6,7 @@ const indexHtml = require('./pages/index.html');
 
 const server = createServer();
 const app = pipe(
-  extend(([req]) => (req.context = require('../data.json'))),
+  extend(([req]) => (req.context = process.candidateData)),
   extend(([, res]) => (res.render = indexHtml))
 )(fromEvent(server, 'request'));
 

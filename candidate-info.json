@@ -1,0 +1,48 @@
+{
+  "bernie-sanders": {
+    "photo": "/assets/images/bernie-sanders.jpg"
+  },
+  "joe-biden": {
+    "photo": "/assets/images/joe-biden.jpg"
+  },
+  "tulsi-gabbard": {
+    "photo": "/assets/images/tulsi-gabbard.jpg",
+    "suspended": "03/19/2020"
+  },
+  "amy-klobuchar": {
+    "photo": "/assets/images/amy-klobuchar.jpg",
+    "suspended": "03/02/2020"
+  },
+  "andrew-yang": {
+    "photo": "/assets/images/andrew-yang.jpg",
+    "suspended": "02/11/2020"
+  },
+  "deval-patrick": {
+    "photo": "/assets/images/deval-patrick.jpg",
+    "suspended": "02/12/2020"
+  },
+  "elizabeth-warren": {
+    "photo": "/assets/images/elizabeth-warren.jpg",
+    "suspended": "03/05/2020"
+  },
+  "john-delaney": {
+    "photo": "/assets/images/john-delaney.jpg",
+    "suspended": "01/31/2020"
+  },
+  "michael-bennet": {
+    "photo": "/assets/images/michael-bennet.jpg",
+    "suspended": "02/11/2020"
+  },
+  "michael-bloomberg": {
+    "photo": "/assets/images/michael-bloomberg.jpg",
+    "suspended": "03/04/2020"
+  },
+  "pete-buttigieg": {
+    "photo": "/assets/images/pete-buttigieg.jpg",
+    "suspended": "03/01/2020"
+  },
+  "tom-steyer": {
+    "photo": "/assets/images/tom-steyer.jpg",
+    "suspended": "02/29/2020"
+  }
+}

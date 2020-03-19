@@ -41,7 +41,13 @@ function candidate([name, data]) {
         src: data.photo,
         alt: `Portrant of ${nameToHuman(name)}.`,
       }),
-      h('h2', { style: 'margin: 0; padding: 0;' }, nameToHuman(name))
+      h(
+        'section',
+        { class: 'meta' },
+        h('h2', { style: 'margin: 0; padding: 0;' }, nameToHuman(name)),
+        data.suspended &&
+          h('p', { style: 'margin: 0;' }, 'Suspended on:', data.suspended)
+      )
     ),
     h(
       'div',
@@ -74,10 +80,7 @@ function candidate([name, data]) {
             ),
             ...projections(data.projection || [])
           )
-        : null,
-
-      data.suspended &&
-        h('p', { style: 'margin: 0;' }, 'Suspended on:', data.suspended)
+        : null
     )
   );
 }

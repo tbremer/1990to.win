@@ -2,7 +2,7 @@ name: Download Data
 
 on:
   schedule:
-    - cron: '*/1 * * * *' # every 1 minutes
+    - cron: '*/30 * * * *'
 
 jobs:
   # Push image to GitHub Package Registry.
@@ -16,9 +16,3 @@ jobs:
 
       - name: Download latest AP Data
         run: ./scripts/download.sh
-      # - name: Build image
-      #   run: docker-compose build
-      # - name: Log into registry
-      #   run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
-      # - name: Push image
-      #   run: docker-compose push
