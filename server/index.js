@@ -5,6 +5,7 @@ function dataMunge() {
   const dataSet = require('../data.json');
   const candidateData = {};
 
+  // build candidate info
   for (const name in info) {
     if (!Object.prototype.hasOwnProperty.call(info, name)) continue;
     const [, lName] = name.split('-');
@@ -29,6 +30,9 @@ function dataMunge() {
   }
 
   process.candidateData = candidateData;
+  process.stateData = dataSet.parties.Dem.states;
+
+  // console.log(process.stateData);
 }
 
 dataMunge();
@@ -42,7 +46,7 @@ const { homepage, curl, assets, stats } = require('./streams');
 const renderer = require('./renderer');
 const h = require('./renderer/h');
 const homePage = require('./pages/home');
-// const statsPage = require('./pages/stats');
+const statsPage = require('./pages/stats');
 
 subscribe(([req, res]) => {
   const body = Buffer.from(
@@ -153,30 +157,30 @@ subscribe(([, res]) => {
   );
 })(assets(app));
 
-// subscribe(([req, res]) => {
-//   const body = Buffer.from(
-//     renderer(
-//       res.render(statsPage, {
-//         url: req.url,
-//         context: req.context,
-//         jsBundle: assets.jsBundle,
-//       })
-//     )
-//   );
+subscribe(([req, res]) => {
+  const body = Buffer.from(
+    renderer(
+      res.render(statsPage, {
+        url: req.url,
+        context: req.context,
+        jsBundle: assets.jsBundle,
+      })
+    )
+  );
 
-//   sendResponse(
-//     res,
-//     [
-//       200,
-//       STATUS_CODES[200],
-//       {
-//         'Content-Type': 'text/html',
-//         'Content-Length': body.byteLength,
-//       },
-//     ],
-//     body
-//   );
-// })(stats(app));
+  sendResponse(
+    res,
+    [
+      200,
+      STATUS_CODES[200],
+      {
+        'Content-Type': 'text/html',
+        'Content-Length': body.byteLength,
+      },
+    ],
+    body
+  );
+})(stats(app));
 
 subscribe(([req, res]) => {
   if (res.finished) return;

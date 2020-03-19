@@ -1,6 +1,5 @@
 const h = require('../renderer/h');
 const { nameToHuman, addDelegates } = require('./home');
-const states = require('../../lib/states');
 
 function stats(context) {
   const entries = Object.entries(context);
@@ -36,8 +35,10 @@ function stats(context) {
 module.exports = stats;
 
 function tableHead() {
-  const header = ['', 'total', 'with-projections'].concat(
-    Array.from(states.keys())
+  const header = ['', 'total'].concat(
+    process.stateData
+      .filter(i => i.name)
+      .map(i => i.name.replace(/ /g, '-').toLowerCase())
   );
   return header.map(cell =>
     h(
@@ -50,7 +51,6 @@ function tableHead() {
 
 function candidateRow([name, candidate], idx) {
   const pledged = candidate.delegates.reduce(addDelegates, 0);
-  const projection = candidate.projection.reduce(addDelegates, 0);
   const evenRowStyle =
     idx % 2 === 0 ? 'background-color: #fff;' : 'background-color: #edeff0;';
 
@@ -80,20 +80,13 @@ function candidateRow([name, candidate], idx) {
         : null
     ),
     h('td', {}, pledged),
-    h('td', {}, projection > 0 ? pledged + projection : '-'),
-    ...Array.from(states.keys()).map(state => {
-      const info = states.get(state).candidates.find(i => i[0] === name);
-      if (info === undefined) return h('td', {}, '–');
-
-      const [, count, type] = info;
-
-      return h(
-        'td',
-        {
-          class: type,
-        },
-        count
+    ...process.stateData.map(state => {
+      const [, last] = name.split('-');
+      const candidate = state.candidates.find(
+        i => i.name.toLowerCase() === last
       );
+
+      return h('td', {}, candidate ? candidate.total : '-');
     })
   );
 }
