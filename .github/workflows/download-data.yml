@@ -2,7 +2,7 @@ name: Download Data
 
 on:
   schedule:
-    - cron: '*/10 * * * *' # every 10 minutes
+    - cron: '*/1 * * * *' # every 1 minutes
 
 jobs:
   # Push image to GitHub Package Registry.
