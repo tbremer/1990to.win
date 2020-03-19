@@ -2,7 +2,7 @@ name: Docker
 
 on:
   schedule:
-    -cron: */10 * * * * # every 10 minutes
+    - cron: */10 * * * * # every 10 minutes
 
 jobs:
   # Push image to GitHub Package Registry.
