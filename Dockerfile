@@ -14,6 +14,7 @@ ENV NODE_ENV=production
 COPY package.json ./
 COPY package-lock.json ./
 COPY data.json ./
+COPY candidate-info.json ./
 COPY server/ server/
 COPY lib/ lib/
 COPY --from=build /app/assets/ assets/
