@@ -1,0 +1,27 @@
+name: Docker
+
+on:
+  schedule:
+    -cron: */10 * * * * # every 10 minutes
+
+jobs:
+  # Push image to GitHub Package Registry.
+  # See also https://docs.docker.com/docker-hub/builds/
+  push:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push'
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Download latest AP Data
+        run ./scripts/download.sh
+
+      # - name: Build image
+      #   run: docker-compose build
+
+      # - name: Log into registry
+      #   run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
+
+      # - name: Push image
+      #   run: docker-compose push
