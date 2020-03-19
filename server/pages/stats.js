@@ -1,6 +1,21 @@
 const h = require('../renderer/h');
 const { nameToHuman, addDelegates } = require('./home');
 
+function getStatesInOrder() {
+  const skipStates = ['UN', 'DA'];
+  const states = Array.from(process.stateData).filter(
+    i => skipStates.indexOf(i.abbr) === -1
+  );
+  states.sort(({ date: dateA }, { date: dateB }) => {
+    const a = new Date(dateA).getTime();
+    const b = new Date(dateB).getTime();
+
+    return a > b ? 1 : a < b ? -1 : 0;
+  });
+
+  return states;
+}
+
 function stats(context) {
   const entries = Object.entries(context);
   const active = entries.filter(([, { suspended }]) => !suspended);
@@ -35,21 +50,43 @@ function stats(context) {
 module.exports = stats;
 
 function tableHead() {
-  const header = ['', 'total'].concat(
-    process.stateData
+  const states = getStatesInOrder();
+
+  const header = [[''], ['total']].concat(
+    states
       .filter(i => i.name)
-      .map(i => i.name.replace(/ /g, '-').toLowerCase())
+      .map(i => [i.name.replace(/ /g, '-').toLowerCase(), i.date])
   );
-  return header.map(cell =>
+  return header.map(([cell, date]) =>
     h(
       'th',
       {},
-      cell.length ? h('div', {}, h('span', {}, nameToHuman(cell))) : null
+      cell.length
+        ? h(
+            'div',
+            {},
+            h('span', {}, nameToHuman(cell), date ? ` - ${date}` : '')
+          )
+        : null
     )
   );
 }
 
+function dateToHuman(date) {
+  let month = date.getMonth() + 1;
+  let day = date.getDate();
+  const year = date.getFullYear();
+
+  if (month < 10) month = '0' + month;
+  if (day < 10) day = '0' + day;
+
+  return `${month}/${day}/${year}`;
+}
+
 function candidateRow([name, candidate], idx) {
+  const states = getStatesInOrder();
+
+  const todayMs = new Date(dateToHuman(new Date())).getTime();
   const pledged = candidate.delegates.reduce(addDelegates, 0);
   const evenRowStyle =
     idx % 2 === 0 ? 'background-color: #fff;' : 'background-color: #edeff0;';
@@ -80,13 +117,21 @@ function candidateRow([name, candidate], idx) {
         : null
     ),
     h('td', {}, pledged),
-    ...process.stateData.map(state => {
+    ...states.map(state => {
+      console.log(JSON.stringify(state, null, 2));
       const [, last] = name.split('-');
+      const raceDate = new Date(state.date).getTime();
       const candidate = state.candidates.find(
         i => i.name.toLowerCase() === last
       );
 
-      return h('td', {}, candidate ? candidate.total : '-');
+      console.log();
+
+      return h(
+        'td',
+        {},
+        raceDate > todayMs || !candidate ? '-' : candidate.total
+      );
     })
   );
 }
