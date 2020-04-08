@@ -1,6 +1,7 @@
 {
   "bernie-sanders": {
-    "photo": "/assets/images/bernie-sanders.jpg"
+    "photo": "/assets/images/bernie-sanders.jpg",
+    "suspended": "04/08/2020"
   },
   "joe-biden": {
     "photo": "/assets/images/joe-biden.jpg"
