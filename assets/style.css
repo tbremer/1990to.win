@@ -157,7 +157,7 @@ table {
 }
 
 th {
-    height: 140px;
+    height: 240px;
     white-space: nowrap;
 }
 
@@ -169,7 +169,7 @@ th:first-child {
 }
 
 th > div {
-    transform: translate(37px, 46px) rotate(-45deg);
+    transform: translate(37px, 96px) rotate(-45deg);
     width: 50px;
 }
 
