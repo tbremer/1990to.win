@@ -106,3 +106,4 @@ dist
 
 assets/*bundle.js
 ._package.json
+docker-compose.*.yml
